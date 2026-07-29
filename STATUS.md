@@ -1,6 +1,6 @@
 # STATUS — daiccpXZfU
 
-**State: FULL GATE READY — five source-anchored claims pass locally.**
+**State: PUBLICATION QUEUED — five source-anchored claims pass locally.**
 
 - Effective anchored contract: five claims / 10 possible points.
 - Pinned primary TeX source: arXiv `2604.17505`, source SHA-256
@@ -11,4 +11,7 @@
 - `python3 repro/src/verify.py` writes the five-claim verdict.
 - `python3 repro/src/publication_gate.py` fails closed unless every claim has
   source, mechanism, control, scope, results, and source audit evidence.
-- Next: Trackio evidence, public GitHub handoff, and canonical queue enqueue.
+- Public GitHub: `MachineLearning-Nerd/icml26-repro-daiccpXZfU-unanimous-acceptable-lotteries`
+  at commit `0f105a8`.
+- Atomically enqueued through `enqueue_backlog.py`. The shared publisher owns
+  Space creation and is currently quota-blocked; no direct publish is made.
