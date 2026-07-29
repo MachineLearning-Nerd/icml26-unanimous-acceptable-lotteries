@@ -1,0 +1,16 @@
+{
+  "arxiv": "2604.17505",
+  "checks": {
+    "five_anchored_claims_pass": true,
+    "independent_mechanism_per_claim": true,
+    "negative_control_per_claim": true,
+    "primary_source_audit_present": true,
+    "theory_scope_limitation_explicit": true
+  },
+  "claim_count": 5,
+  "paper": "daiccpXZfU",
+  "publication_eligible": true,
+  "publication_gate_passed": true,
+  "scope": "five source-anchored finite membership-query constructions plus public TeX proof anchors",
+  "tests_passed": true
+}

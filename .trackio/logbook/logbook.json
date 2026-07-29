@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "title": "Repro - Learning Unanimously Acceptable Lotteries",
+  "emoji": "🎯",
+  "space_id": null,
+  "paper": null,
+  "tags": [],
+  "updated_at": "2026-07-29T12:24:19+00:00",
+  "root": {
+    "slug": "index",
+    "title": "Repro - Learning Unanimously Acceptable Lotteries",
+    "file": "pages/index.md",
+    "children": [
+      {
+        "slug": "claim-1",
+        "title": "Claim 1",
+        "file": "pages/claim-1/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-2",
+        "title": "Claim 2",
+        "file": "pages/claim-2/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-3",
+        "title": "Claim 3",
+        "file": "pages/claim-3/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-4",
+        "title": "Claim 4",
+        "file": "pages/claim-4/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-5",
+        "title": "Claim 5",
+        "file": "pages/claim-5/page.md",
+        "children": []
+      },
+      {
+        "slug": "methods",
+        "title": "Methods",
+        "file": "pages/methods/page.md",
+        "children": []
+      },
+      {
+        "slug": "negative-controls",
+        "title": "Negative controls",
+        "file": "pages/negative-controls/page.md",
+        "children": []
+      },
+      {
+        "slug": "conclusion",
+        "title": "Conclusion",
+        "file": "pages/conclusion/page.md",
+        "children": []
+      }
+    ]
+  },
+  "agent_view_tokens": 1092,
+  "revision": "1785327859565113237"
+}

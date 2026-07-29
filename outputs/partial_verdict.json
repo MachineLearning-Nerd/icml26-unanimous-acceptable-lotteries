@@ -1,0 +1,56 @@
+{
+  "all_claims_passed": true,
+  "arxiv": "2604.17505",
+  "claim_count": 4,
+  "claims": {
+    "claim_1_halfspace": {
+      "cells": 2480,
+      "mechanism": "literal edge bisection/rational recovery and independent simplex evaluation",
+      "negative_control": {
+        "unquantized_threshold_breaks_bounded_denominator": true
+      },
+      "passed": true,
+      "scope": "all grid lotteries for five source-model quantized halfspaces.",
+      "source": "Algorithm 1; Lemmas 3.1--3.2"
+    },
+    "claim_2_deterministic": {
+      "feasible_rounds": 3,
+      "infeasible_rounds": 3,
+      "mechanism": "learn/restart/Select loop with independent finite LP-grid solver",
+      "negative_control": {
+        "ignored_rejecting_agent_false_positive": true
+      },
+      "passed": true,
+      "scope": "complete source membership-query loop on feasible and infeasible instances.",
+      "source": "Algorithm 2; Theorem 3.3"
+    },
+    "claim_4_lower_bound": {
+      "mechanism": "complete positive epsilon-grid singleton-feasibility construction and leaf count",
+      "negative_control": {
+        "non_singleton_family_invalidates_leaf_count": true
+      },
+      "passed": true,
+      "positive_grid_size": 36,
+      "scope": "source lower-bound construction at n=6, m=3, epsilon=0.1.",
+      "source": "Theorems 4.1--4.2 lower-bound family"
+    },
+    "claim_5_prediction": {
+      "accurate_order_queries": 25,
+      "mechanism": "Algorithm 2 with predicted agent order and record-agent/query accounting",
+      "negative_control": {
+        "reversed_advice_changes_record_agent_trace": true
+      },
+      "passed": true,
+      "record_agents": {
+        "accurate": 1,
+        "reverse": 1
+      },
+      "reverse_order_queries": 27,
+      "scope": "finite predicted-order instance with two binding and three dummy agents.",
+      "source": "Theorems 5.1--5.2 learning-augmented ordering"
+    }
+  },
+  "limitations": "C3 randomized Clarkson-style Algorithm 3 is intentionally absent until its exact source loop and independent control are executed; this four-claim result cannot be queued.",
+  "paper": "daiccpXZfU",
+  "publication_eligible": false
+}
