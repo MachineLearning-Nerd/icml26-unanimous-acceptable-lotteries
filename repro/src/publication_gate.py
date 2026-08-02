@@ -149,10 +149,11 @@ def validate_report_and_notebook(release_root, opened):
     )
     check = subprocess.run(
         ["uv", "run", "--frozen", "--extra", "notebook", "marimo", "check", "notebooks/reproduction.py"],
-        cwd=ROOT, text=True, capture_output=True, check=True,
+        cwd=ROOT, text=True, capture_output=True,
     )
     print(sync.stdout + sync.stderr, end="")
     print(check.stdout + check.stderr, end="")
+    assert check.returncode == 0, f"marimo check exited {check.returncode}"
     return {"command": "uv run --frozen --extra notebook marimo check notebooks/reproduction.py", "passed": True}
 
 
