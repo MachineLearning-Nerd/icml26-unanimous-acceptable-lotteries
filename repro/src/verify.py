@@ -21,6 +21,7 @@ from pathlib import Path
 
 from claim3_scaling import run_claim3_scaling
 from claim3_exhaustive import run_claim3_exhaustive
+from claim1_deterministic import run_claim1_deterministic
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "outputs"
@@ -281,10 +282,13 @@ def main():
     claim3_exhaustive = run_claim3_exhaustive(Agent, learn_hyperplane, satisfies, simplex_grid, ROOT)
     subprocess.run([sys.executable, str(ROOT / ".openresearch" / "artifacts" / "claim-3" / "verify_claim.py")],
                    cwd=ROOT, check=True)
+    claim1_upgrade = run_claim1_deterministic(Agent, learn_hyperplane, ROOT)
+    subprocess.run([sys.executable, str(ROOT / ".openresearch" / "artifacts" / "claim-1" / "verify_claim.py")],
+                   cwd=ROOT, check=True)
     claim3_upgrade = {"status": "VERIFIED", "confidence": "HIGH",
                       "routes": {"exact_scaling": claim3_scaling, "exhaustive_correctness": claim3_exhaustive}}
     campaign_claims = {
-        "claim_1_deterministic": {"status": "BLOCKED", "reason": "full-scale contract not yet executed"},
+        "claim_1_deterministic": claim1_upgrade,
         "claim_2_randomized": {"status": "BLOCKED", "reason": "full-scale contract not yet executed"},
         "claim_3_halfspace": claim3_upgrade,
         "claim_4_lower_bounds": {"status": "BLOCKED", "reason": "minimax certificate not yet executed"},
