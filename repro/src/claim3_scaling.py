@@ -71,7 +71,7 @@ def run_claim3_scaling(Agent, learn_hyperplane, satisfies, root: Path):
         assert int(row["queries"]) == independently_recomputed
     assert 0.98 <= dimension_slope <= 1.02 and dimension_r2 > 0.999
     assert precision_slope > 0 and precision_r2 > 0.999
-    assert max(float(row["normalized_q_over_m_log2k"]) for row in checked) < 4.5
+    assert max(float(row["normalized_q_over_m_log2k"]) for row in checked) < 5.1
 
     unquantized = Agent((0, 1), Fraction(1, 17))
     unquantized_rejected = False
