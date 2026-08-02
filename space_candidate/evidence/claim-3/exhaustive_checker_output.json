@@ -1,0 +1,8 @@
+{
+  "instances": 12272,
+  "lottery_cells_checked": 9882192,
+  "max_epsilon_denominator": 12,
+  "max_m": 4,
+  "passed": true,
+  "settings": 18
+}

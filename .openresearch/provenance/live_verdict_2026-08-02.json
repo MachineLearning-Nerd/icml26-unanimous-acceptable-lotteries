@@ -1,0 +1,37 @@
+{
+  "space_id": "DineshAI/daiccpXZfU",
+  "orid": "daiccpXZfU",
+  "paper_title": "Learning Unanimously Acceptable Lotteries via Queries",
+  "sha": "88488bc18db7974567008ee55dbea85871de82e4",
+  "judged_at": "2026-07-30T14:54:40+00:00",
+  "model": "zai-org/GLM-5.2",
+  "claims": [
+    {
+      "claim": "For n agents and m alternatives with epsilon-quantized utilities and thresholds, the deterministic algorithm finds a unanimously acceptable lottery or certifies infeasibility using O(n^2 + nm log(1/epsilon)) membership queries (Algorithm 2, Theorem 3.3).",
+      "verdict": "toy",
+      "evidence": "Algorithm 2 is implemented with exact rational arithmetic and tested on a 3-agent, 3-alternative instance (epsilon=1/10), verifying correct feasible/infeasible outcomes, but the O(n^2 + nm log(1/epsilon)) query complexity bound is never measured or compared at scale."
+    },
+    {
+      "claim": "The randomized algorithm achieves expected query complexity O(nm log n + min{n, m^3 log n} * m log(1/epsilon)) by sampling agents via weight-biased Clarkson-style reweighting (Algorithm 3, Theorem 3.4).",
+      "verdict": "toy",
+      "evidence": "Algorithm 3 runs on 80 agents with m=3 alternatives across 12 seeds, confirming correctness and that reweighting occurs, but the expected query complexity O(nm log n + min{n, m^3 log n} * m log(1/epsilon)) is not measured or compared; m=3 is far too small to probe the m^3 term."
+    },
+    {
+      "claim": "A single agent's acceptability halfspace can be recovered using O(m log(1/epsilon)) queries via the LearnHyperplane subroutine (Algorithm 1, Lemmas 3.1-3.2).",
+      "verdict": "toy",
+      "evidence": "LearnHyperplane is tested on 5 instances with m=3, epsilon=1/10, checking halfspace agreement on a 30-denominator grid and query counts against a derived bound, but the scale is too small to verify the claimed O(m log(1/epsilon)) asymptotic behavior."
+    },
+    {
+      "claim": "Any correct algorithm requires Omega((n - min{n,m}) + (min{n,m} - 1) log(1/epsilon)) queries in the worst case, and even for a single agent (n=1) Omega(m) queries are necessary (Theorems 4.1-4.2).",
+      "verdict": "toy",
+      "evidence": "The lower-bound family from Theorem 4.1 is constructed at n=6, m=3, epsilon=0.1, verifying that the feasible set is a singleton for each positive-grid point, but no algorithm is run to demonstrate the Omega(...) query lower bound; only the construction's structural property is checked at tiny scale."
+    },
+    {
+      "claim": "With a predicted agent ordering of quality R(sigma-hat), a learning-augmented algorithm reduces query complexity to O((n + m log(1/epsilon)) * R(sigma-hat)), degrading smoothly as prediction quality worsens (Theorems 5.1-5.2).",
+      "verdict": "toy",
+      "evidence": "Algorithm 2 is run with two predicted orderings on a 5-agent, 3-alternative instance, showing that order changes the query trace, but the O((n + m log(1/epsilon)) * R(sigma-hat)) bound is not measured or verified; only a qualitative ordering effect is demonstrated."
+    }
+  ],
+  "overall": "The logbook faithfully implements Algorithms 1-3 and the lower-bound construction using exact rational arithmetic, with negative controls, but all experiments run at toy scale (m=2-3 alternatives, epsilon=1/10, n≤80) and none systematically measure or compare query counts against the claimed asymptotic bounds. The work validates algorithm correctness on small instances but does not verify the paper's core query-complexity claims at meaningful scale.",
+  "quality": "medium"
+}

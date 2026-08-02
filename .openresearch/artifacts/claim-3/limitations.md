@@ -1,5 +1,3 @@
 # Claim 3 limitations and deviations
 
-The empirical sweep is finite and cannot alone establish a universal asymptotic theorem. The verdict therefore also requires the independently reconstructed symbolic query envelope and the exact bounded-denominator recovery argument. Route B separately audits correctness over complete finite domains.
-
-The scaling family is deliberately worst-case for the number of edge searches; it is not claimed to represent typical agents.
+The empirical sweep and exhaustive domains are finite and do not by themselves establish a universal theorem. The verdict also requires the independently reconstructed exact normalization and bounded-denominator query envelope. The scaling family is deliberately worst-case for edge count and is not claimed to represent typical agents.

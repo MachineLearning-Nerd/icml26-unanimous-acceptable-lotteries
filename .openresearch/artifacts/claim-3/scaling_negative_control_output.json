@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "unquantized_1_over_17_rejected_at_epsilon_1_over_16": true,
+  "vertex_only_control_labels": [
+    false,
+    true
+  ],
+  "vertex_only_control_misses_midpoint_disagreement": true
+}

@@ -1,9 +1,13 @@
 # Claim 3 method
 
-The literal `LearnHyperplane` implementation is run on a worst-case quantized family with one rejected vertex, `m-1` accepted vertices, and turning point `1/2` on every searched edge. This forces all `m-1` threshold searches.
+## Route A: exact large-scale query growth
 
-The sweep is the Cartesian product `m = 2,...,256` and `1/epsilon = 2,...,1024`, both in powers of two. No query budget, tolerance, or stopping horizon is selected from the claimed bound. The algorithm runs to its source stopping rule.
+Run literal `LearnHyperplane` on a worst-case quantized family forcing all `m-1` edge searches. Sweep the Cartesian product of powers of two `m=2..256` and `1/epsilon=2..1024`. No query budget or horizon is selected from the theorem. A standalone checker recomputes the exact count without calling Algorithm 1.
 
-An independent CSV checker derives the exact bisection depth from bounded-denominator rational separation and recomputes every expected query count without calling `LearnHyperplane`. It also checks the two scaling axes and their regression residuals.
+## Route B: exhaustive correctness and symbolic lift
 
-Controls remove finite precision (`tau = 1/17` at `epsilon = 1/16`) and remove edge searches (two halfspaces with identical vertex labels but opposite midpoint labels). Both must fail for the intended reason.
+Enumerate every utility vector and positive threshold for complete domains `(m=2, K=2..12)`, `(m=3, K=2..6)`, and `(m=4, K=2..3)`. Compare Algorithm 1 with an independent expected-utility oracle on every grid point of denominator `2K^2`.
+
+Reconstruct the continuous proof: exact turning points give `c_j=(u_j-u_r)/(tau-u_r)`, hence `<c,x> >= 1` iff `<u,x> >= tau` because simplex coordinates sum to one. At most `m-1` searches each use logarithmically many queries.
+
+Controls remove quantization, remove edge searches, mutate inclusive boundary membership, and skip a necessary edge.

@@ -1,0 +1,11 @@
+{
+  "status": "VERIFIED",
+  "symbolic_derivation": [
+    "Every searched turning point is (tau-u_k)/(u_j-u_k) and is recovered exactly.",
+    "If every first-stage turning point is one, acceptance requires all mass on accepted vertices.",
+    "Otherwise c_j=(u_j-u_r)/(tau-u_r) for every coordinate j, including the second-stage formula.",
+    "Because sum_j x_j=1, <c,x>>=1 iff (<u,x>-u_r)/(tau-u_r)>=1 iff <u,x>>=tau.",
+    "At most m-1 edges are searched, each with O(log(1/epsilon)) membership queries."
+  ],
+  "universal_scope": "The algebra uses only the stated quantization, threshold, and simplex assumptions; finite enumeration is an independent implementation audit, not the quantifier lift."
+}

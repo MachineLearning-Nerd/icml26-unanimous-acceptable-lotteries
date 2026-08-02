@@ -1,0 +1,11 @@
+{
+  "dimension_loglog_slope": 1.012482040357266,
+  "dimension_r_squared": 0.9999864582910142,
+  "max_epsilon_denominator": 1024,
+  "max_m": 256,
+  "max_queries": 5866,
+  "passed": true,
+  "precision_queries_per_log2k_slope": 126.0,
+  "precision_r_squared": 1.0,
+  "rows_checked": 80
+}

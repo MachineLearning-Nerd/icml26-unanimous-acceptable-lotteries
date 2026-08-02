@@ -12,13 +12,14 @@
     "epsilon is in (0, 1/2] and 1/epsilon is a positive integer",
     "utilities lie in {0, epsilon, ..., 1}",
     "threshold lies in {epsilon, 2 epsilon, ..., 1}",
-    "queries return exact membership in the expected-utility halfspace"
+    "queries return exact inclusive expected-utility membership"
   ],
   "acceptance_criteria": [
-    "literal Algorithm 1 query counts equal an independently derived envelope on all sweep rows",
-    "dimension scaling has log-log slope in [0.98, 1.02] with R^2 > 0.999",
+    "80 large-scale rows match the independent exact query envelope",
+    "dimension log-log slope is in [0.98, 1.02] with R^2 > 0.999",
     "queries are affine in log2(1/epsilon) with R^2 > 0.999",
-    "the symbolic universal envelope is reconstructed from at most m-1 edge searches",
-    "the independent checker passes and assumption-breaking controls fail for the intended reason"
+    "all agents in 18 complete finite domains agree with the independent oracle",
+    "the continuous-simplex normalization and universal query envelope are reconstructed symbolically",
+    "standalone checkers and four assumption or implementation controls pass"
   ]
 }

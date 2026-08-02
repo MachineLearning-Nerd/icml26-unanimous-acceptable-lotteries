@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "skipped_edge_indistinguishable_transcripts_but_different_halfspaces": true,
+  "strict_boundary_mutation_detected": true
+}

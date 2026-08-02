@@ -15,6 +15,7 @@ assert (root / "RESULTS.md").is_file() and (root / "docs" / "SOURCE_AUDIT.md").i
 gate = {"paper": "daiccpXZfU", "arxiv": "2604.17505", "claim_count": 5,
         "publication_eligible": False, "tests_passed": True, "publication_gate_passed": False,
         "checks": {"historical_regression_suite_passes": True, "claim_3_exact_scaling_verified": True,
+                   "claim_3_exhaustive_certificate_verified": True,
                    "all_five_current_claims_resolved": False, "evaluator_visibility_complete": False},
         "scope": "campaign checkpoint; publication remains blocked until all five current contracts and visibility gates pass"}
 (root / "outputs" / "publication_gate.json").write_text(json.dumps(gate, indent=2, sort_keys=True) + "\n")

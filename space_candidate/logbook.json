@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "title": "Repro - Learning Unanimously Acceptable Lotteries",
+  "emoji": "🎯",
+  "space_id": "DineshAI/daiccpXZfU",
+  "paper": "2604.17505",
+  "tags": ["icml2026-repro", "paper-daiccpXZfU", "theory", "membership-queries"],
+  "updated_at": "2026-08-02T00:00:00+05:30",
+  "root": {
+    "slug": "current",
+    "title": "Current verification",
+    "file": "pages/current/index.md",
+    "children": [
+      {
+        "slug": "current-claim-3",
+        "title": "Claim 3 — VERIFIED",
+        "file": "pages/current/claim-3/page.md",
+        "children": []
+      },
+      {
+        "slug": "historical-rejected-baseline",
+        "title": "Historical rejected baseline",
+        "file": "pages/historical-rejected-baseline/index.md",
+        "children": [
+          {"slug": "historical-home", "title": "Historical rejected baseline — home", "file": "pages/index.md", "children": []},
+          {"slug": "claim-1", "title": "Historical rejected baseline — Claim 1", "file": "pages/claim-1/page.md", "children": []},
+          {"slug": "claim-2", "title": "Historical rejected baseline — Claim 2", "file": "pages/claim-2/page.md", "children": []},
+          {"slug": "claim-3", "title": "Historical rejected baseline — Claim 3", "file": "pages/claim-3/page.md", "children": []},
+          {"slug": "claim-4", "title": "Historical rejected baseline — Claim 4", "file": "pages/claim-4/page.md", "children": []},
+          {"slug": "claim-5", "title": "Historical rejected baseline — Claim 5", "file": "pages/claim-5/page.md", "children": []},
+          {"slug": "methods", "title": "Historical rejected baseline — Methods", "file": "pages/methods/page.md", "children": []},
+          {"slug": "negative-controls", "title": "Historical rejected baseline — Controls", "file": "pages/negative-controls/page.md", "children": []},
+          {"slug": "conclusion", "title": "Historical rejected baseline — Conclusion", "file": "pages/conclusion/page.md", "children": []}
+        ]
+      }
+    ]
+  }
+}

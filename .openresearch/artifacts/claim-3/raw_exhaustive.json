@@ -1,0 +1,128 @@
+[
+  {
+    "epsilon_denominator": 2,
+    "instances": 18,
+    "lottery_cells_checked": 162,
+    "m": 2,
+    "query_envelope": 6
+  },
+  {
+    "epsilon_denominator": 3,
+    "instances": 48,
+    "lottery_cells_checked": 912,
+    "m": 2,
+    "query_envelope": 7
+  },
+  {
+    "epsilon_denominator": 4,
+    "instances": 100,
+    "lottery_cells_checked": 3300,
+    "m": 2,
+    "query_envelope": 8
+  },
+  {
+    "epsilon_denominator": 5,
+    "instances": 180,
+    "lottery_cells_checked": 9180,
+    "m": 2,
+    "query_envelope": 8
+  },
+  {
+    "epsilon_denominator": 6,
+    "instances": 294,
+    "lottery_cells_checked": 21462,
+    "m": 2,
+    "query_envelope": 9
+  },
+  {
+    "epsilon_denominator": 7,
+    "instances": 448,
+    "lottery_cells_checked": 44352,
+    "m": 2,
+    "query_envelope": 9
+  },
+  {
+    "epsilon_denominator": 8,
+    "instances": 648,
+    "lottery_cells_checked": 83592,
+    "m": 2,
+    "query_envelope": 10
+  },
+  {
+    "epsilon_denominator": 9,
+    "instances": 900,
+    "lottery_cells_checked": 146700,
+    "m": 2,
+    "query_envelope": 10
+  },
+  {
+    "epsilon_denominator": 10,
+    "instances": 1210,
+    "lottery_cells_checked": 243210,
+    "m": 2,
+    "query_envelope": 10
+  },
+  {
+    "epsilon_denominator": 11,
+    "instances": 1584,
+    "lottery_cells_checked": 384912,
+    "m": 2,
+    "query_envelope": 10
+  },
+  {
+    "epsilon_denominator": 12,
+    "instances": 2028,
+    "lottery_cells_checked": 586092,
+    "m": 2,
+    "query_envelope": 11
+  },
+  {
+    "epsilon_denominator": 2,
+    "instances": 54,
+    "lottery_cells_checked": 2430,
+    "m": 3,
+    "query_envelope": 11
+  },
+  {
+    "epsilon_denominator": 3,
+    "instances": 192,
+    "lottery_cells_checked": 36480,
+    "m": 3,
+    "query_envelope": 13
+  },
+  {
+    "epsilon_denominator": 4,
+    "instances": 500,
+    "lottery_cells_checked": 280500,
+    "m": 3,
+    "query_envelope": 15
+  },
+  {
+    "epsilon_denominator": 5,
+    "instances": 1080,
+    "lottery_cells_checked": 1432080,
+    "m": 3,
+    "query_envelope": 15
+  },
+  {
+    "epsilon_denominator": 6,
+    "instances": 2058,
+    "lottery_cells_checked": 5558658,
+    "m": 3,
+    "query_envelope": 17
+  },
+  {
+    "epsilon_denominator": 2,
+    "instances": 162,
+    "lottery_cells_checked": 26730,
+    "m": 4,
+    "query_envelope": 16
+  },
+  {
+    "epsilon_denominator": 3,
+    "instances": 768,
+    "lottery_cells_checked": 1021440,
+    "m": 4,
+    "query_envelope": 19
+  }
+]

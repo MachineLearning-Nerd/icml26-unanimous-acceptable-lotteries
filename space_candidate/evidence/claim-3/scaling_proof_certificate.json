@@ -1,0 +1,13 @@
+{
+  "derived_envelope": "q <= m + (m-1) * (2*ceil(log2(1/epsilon)) + 2)",
+  "non_circularity": "Sweep endpoints span independent powers of two in m and 1/epsilon; no query budget, tolerance, or sample count is set from the claimed asymptotic formula.",
+  "obligations": {
+    "algorithm_queries_all_m_vertices": true,
+    "algorithm_searches_at_most_m_minus_1_edges": true,
+    "bisection_steps_le_2_ceil_log2_1_over_epsilon_plus_2": true,
+    "distinct_bounded_denominator_rationals_are_separated_by_at_least_epsilon_squared": true,
+    "edge_turning_point_denominator_at_most_1_over_epsilon": true,
+    "universal_query_envelope_is_O_m_log_1_over_epsilon": true
+  },
+  "status": "VERIFIED"
+}
