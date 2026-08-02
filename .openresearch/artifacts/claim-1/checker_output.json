@@ -1,0 +1,14 @@
+{
+  "feasible_infeasible_and_reject_all_cases": true,
+  "max_epsilon_denominator": 65536,
+  "max_m": 256,
+  "max_n": 65536,
+  "max_total_queries": 591568,
+  "passed": true,
+  "precision_hyperplane_queries_per_log2k_slope": 30,
+  "precision_r_squared": 1,
+  "quadratic_direct_envelope": "n^2/4 <= verification_queries <= n^2/3",
+  "quadratic_verification_loglog_slope": 1.9084935913221301,
+  "quadratic_verification_r_squared": 0.9998346330460764,
+  "rows_checked": 37
+}\n

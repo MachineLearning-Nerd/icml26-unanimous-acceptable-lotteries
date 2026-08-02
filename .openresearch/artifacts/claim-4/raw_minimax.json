@@ -1,0 +1,386 @@
+[
+  {
+    "alternatives": 1,
+    "exact_minimax_worst_case_queries": 1,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 2,
+    "exact_minimax_worst_case_queries": 2,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 3,
+    "exact_minimax_worst_case_queries": 3,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 4,
+    "exact_minimax_worst_case_queries": 4,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 5,
+    "exact_minimax_worst_case_queries": 5,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 6,
+    "exact_minimax_worst_case_queries": 6,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 7,
+    "exact_minimax_worst_case_queries": 7,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 8,
+    "exact_minimax_worst_case_queries": 8,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 9,
+    "exact_minimax_worst_case_queries": 9,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 10,
+    "exact_minimax_worst_case_queries": 10,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 11,
+    "exact_minimax_worst_case_queries": 11,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 12,
+    "exact_minimax_worst_case_queries": 12,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 13,
+    "exact_minimax_worst_case_queries": 13,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 14,
+    "exact_minimax_worst_case_queries": 14,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 15,
+    "exact_minimax_worst_case_queries": 15,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 16,
+    "exact_minimax_worst_case_queries": 16,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 17,
+    "exact_minimax_worst_case_queries": 17,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 18,
+    "exact_minimax_worst_case_queries": 18,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 19,
+    "exact_minimax_worst_case_queries": 19,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 20,
+    "exact_minimax_worst_case_queries": 20,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 21,
+    "exact_minimax_worst_case_queries": 21,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 22,
+    "exact_minimax_worst_case_queries": 22,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 23,
+    "exact_minimax_worst_case_queries": 23,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 24,
+    "exact_minimax_worst_case_queries": 24,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 25,
+    "exact_minimax_worst_case_queries": 25,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 26,
+    "exact_minimax_worst_case_queries": 26,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 27,
+    "exact_minimax_worst_case_queries": 27,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 28,
+    "exact_minimax_worst_case_queries": 28,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 29,
+    "exact_minimax_worst_case_queries": 29,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 30,
+    "exact_minimax_worst_case_queries": 30,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 31,
+    "exact_minimax_worst_case_queries": 31,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 32,
+    "exact_minimax_worst_case_queries": 32,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 33,
+    "exact_minimax_worst_case_queries": 33,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 34,
+    "exact_minimax_worst_case_queries": 34,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 35,
+    "exact_minimax_worst_case_queries": 35,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 36,
+    "exact_minimax_worst_case_queries": 36,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 37,
+    "exact_minimax_worst_case_queries": 37,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 38,
+    "exact_minimax_worst_case_queries": 38,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 39,
+    "exact_minimax_worst_case_queries": 39,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 40,
+    "exact_minimax_worst_case_queries": 40,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 41,
+    "exact_minimax_worst_case_queries": 41,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 42,
+    "exact_minimax_worst_case_queries": 42,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 43,
+    "exact_minimax_worst_case_queries": 43,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 44,
+    "exact_minimax_worst_case_queries": 44,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 45,
+    "exact_minimax_worst_case_queries": 45,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 46,
+    "exact_minimax_worst_case_queries": 46,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 47,
+    "exact_minimax_worst_case_queries": 47,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 48,
+    "exact_minimax_worst_case_queries": 48,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 49,
+    "exact_minimax_worst_case_queries": 49,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 50,
+    "exact_minimax_worst_case_queries": 50,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 51,
+    "exact_minimax_worst_case_queries": 51,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 52,
+    "exact_minimax_worst_case_queries": 52,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 53,
+    "exact_minimax_worst_case_queries": 53,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 54,
+    "exact_minimax_worst_case_queries": 54,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 55,
+    "exact_minimax_worst_case_queries": 55,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 56,
+    "exact_minimax_worst_case_queries": 56,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 57,
+    "exact_minimax_worst_case_queries": 57,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 58,
+    "exact_minimax_worst_case_queries": 58,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 59,
+    "exact_minimax_worst_case_queries": 59,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 60,
+    "exact_minimax_worst_case_queries": 60,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 61,
+    "exact_minimax_worst_case_queries": 61,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 62,
+    "exact_minimax_worst_case_queries": 62,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 63,
+    "exact_minimax_worst_case_queries": 63,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  },
+  {
+    "alternatives": 64,
+    "exact_minimax_worst_case_queries": 64,
+    "nonvertex_query_eliminates_candidates": 0,
+    "vertex_query_eliminates_at_most_one_positive_instance_on_false": 1
+  }
+]\n

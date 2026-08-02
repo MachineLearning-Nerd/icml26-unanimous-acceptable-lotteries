@@ -1,0 +1,22 @@
+{
+  "max_epsilon_denominator": 65536,
+  "max_m": 256,
+  "max_n": 65536,
+  "max_total_queries": 2045440,
+  "passed": true,
+  "quality_R_values": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "quality_total_query_affine_slope": 7958,
+  "quality_total_query_intercept": 8192,
+  "rows_checked": 40
+}\n
+

@@ -1,0 +1,7 @@
+{
+  "dropping_a_coordinate_constraint_returns_a_rejected_candidate": true,
+  "no_restart_stale_candidate_rejected": true,
+  "passed": true,
+  "strict_boundary_mutation_rejects_valid_boundary": true
+}\n
+

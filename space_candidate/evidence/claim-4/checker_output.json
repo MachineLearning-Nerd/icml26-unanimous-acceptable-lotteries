@@ -1,0 +1,13 @@
+{
+  "asymptotic_rows": 6,
+  "complete_domains": 3,
+  "hard_instances_exhausted": 449,
+  "max_epsilon_denominator": 65536,
+  "max_m": 128,
+  "max_n": 1000000,
+  "minimum_certified_to_target_ratio": 0.7113095238095238,
+  "passed": true,
+  "single_agent_minimax_max_m": 64,
+  "singleton_grid_comparisons": 158323
+}\n
+

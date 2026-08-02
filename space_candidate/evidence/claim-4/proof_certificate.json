@@ -1,0 +1,20 @@
+{
+  "derived_bound": "Omega((n-min(n,m)) + (min(n,m)-1) log(1/epsilon)); and Omega(m) for n=1",
+  "obligations": {
+    "always_correct_randomized_algorithm_is_distribution_over_correct_deterministic_trees": true,
+    "binary_tree_depth_at_least_log2_leaf_count": true,
+    "binomial_lower_bound_and_m_le_K_to_1_minus_delta_give_p_log_K": true,
+    "distinct_hard_instances_require_distinct_output_leaves": true,
+    "dummy_agent_true_edges_prune_and_add_n_minus_m_queries": true,
+    "every_agent_queried_on_every_feasible_instance_via_reject_all_substitution": true,
+    "kraft_average_depth_bound_holds_for_uniform_hard_family": true,
+    "positive_grid_coordinate_family_has_singleton_feasible_set": true,
+    "positive_grid_size_equals_binomial_K_minus_1_choose_p_minus_1": true,
+    "single_agent_argument_holds_for_every_random_seed": true,
+    "single_agent_infeasible_instance_requires_all_m_vertex_queries": true,
+    "yao_lifts_uniform_deterministic_average_to_randomized_worst_case_expectation": true
+  },
+  "quantifier_lift": "The decision-tree, Kraft, and Yao obligations quantify over every correct deterministic or always-correct randomized algorithm; finite enumeration audits the hard-family construction and minimax recurrence.",
+  "status": "VERIFIED"
+}\n
+

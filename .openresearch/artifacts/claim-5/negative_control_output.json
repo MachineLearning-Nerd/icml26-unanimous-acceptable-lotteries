@@ -1,0 +1,7 @@
+{
+  "R_zero_exception_detected": true,
+  "passed": true,
+  "reversing_nested_threshold_advice_changes_operational_R": true,
+  "strict_boundary_mutation_rejects_selected_boundary": true,
+  "using_R_instead_of_R_plus_1_would_predict_zero_for_R_zero": true
+}\n

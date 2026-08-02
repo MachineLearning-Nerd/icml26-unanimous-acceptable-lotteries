@@ -21,6 +21,10 @@ from pathlib import Path
 
 from claim3_scaling import run_claim3_scaling
 from claim3_exhaustive import run_claim3_exhaustive
+from claim1_deterministic import run_claim1_deterministic
+from claim5_prediction import run_claim5_prediction
+from claim4_lower_bound import run_claim4_lower_bound
+from claim2_randomized import run_claim2_randomized
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "outputs"
@@ -281,20 +285,33 @@ def main():
     claim3_exhaustive = run_claim3_exhaustive(Agent, learn_hyperplane, satisfies, simplex_grid, ROOT)
     subprocess.run([sys.executable, str(ROOT / ".openresearch" / "artifacts" / "claim-3" / "verify_claim.py")],
                    cwd=ROOT, check=True)
+    claim1_upgrade = run_claim1_deterministic(Agent, learn_hyperplane, ROOT)
+    subprocess.run([sys.executable, str(ROOT / ".openresearch" / "artifacts" / "claim-1" / "verify_claim.py")],
+                   cwd=ROOT, check=True)
+    claim5_upgrade = run_claim5_prediction(learn_hyperplane, ROOT)
+    subprocess.run([sys.executable, str(ROOT / ".openresearch" / "artifacts" / "claim-5" / "verify_claim.py")],
+                   cwd=ROOT, check=True)
+    claim4_upgrade = run_claim4_lower_bound(ROOT)
+    subprocess.run([sys.executable, str(ROOT / ".openresearch" / "artifacts" / "claim-4" / "verify_claim.py")],
+                   cwd=ROOT, check=True)
+    claim2_upgrade = run_claim2_randomized(learn_hyperplane, ROOT)
+    subprocess.run([sys.executable, str(ROOT / ".openresearch" / "artifacts" / "claim-2" / "verify_claim.py")],
+                   cwd=ROOT, check=True)
     claim3_upgrade = {"status": "VERIFIED", "confidence": "HIGH",
                       "routes": {"exact_scaling": claim3_scaling, "exhaustive_correctness": claim3_exhaustive}}
     campaign_claims = {
-        "claim_1_deterministic": {"status": "BLOCKED", "reason": "full-scale contract not yet executed"},
-        "claim_2_randomized": {"status": "BLOCKED", "reason": "full-scale contract not yet executed"},
+        "claim_1_deterministic": claim1_upgrade,
+        "claim_2_randomized": claim2_upgrade,
         "claim_3_halfspace": claim3_upgrade,
-        "claim_4_lower_bounds": {"status": "BLOCKED", "reason": "minimax certificate not yet executed"},
-        "claim_5_prediction": {"status": "BLOCKED", "reason": "full-scale contract not yet executed"},
+        "claim_4_lower_bounds": claim4_upgrade,
+        "claim_5_prediction": claim5_upgrade,
     }
     cpu_affinity = len(os.sched_getaffinity(0)) if hasattr(os, "sched_getaffinity") else os.cpu_count()
     result = {"paper": "daiccpXZfU", "arxiv": "2604.17505", "all_claims_passed": all(v["passed"] for v in claims.values()),
               "claim_count": len(claims), "claims": claims,
               "campaign_claims": campaign_claims,
-              "publication_eligible": all(v["status"] in {"VERIFIED", "FALSIFIED"} for v in campaign_claims.values()),
+              "scientific_claims_resolved": all(v["status"] in {"VERIFIED", "FALSIFIED"} for v in campaign_claims.values()),
+              "publication_eligible": False,
               "execution": {"git_sha": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
                             "python": platform.python_version(), "logical_cpus": os.cpu_count(),
                             "cpu_affinity": cpu_affinity, "runtime_seconds": round(time.perf_counter() - started, 6)},
@@ -306,3 +323,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

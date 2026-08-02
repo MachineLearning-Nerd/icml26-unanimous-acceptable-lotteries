@@ -1,0 +1,17 @@
+{
+  "derived_envelope": "q <= n(R+1) + R[m+(m-1)(2 ceil(log2(1/epsilon))+2)]",
+  "obligations": {
+    "R_equals_number_of_learn_hyperplane_calls": true,
+    "R_zero_uses_n_queries_per_paper_footnote": true,
+    "correctness_invariant_is_order_independent": true,
+    "elicitation_queries_O_R_m_log_1_over_epsilon": true,
+    "for_R_at_least_1_R_plus_1_at_most_2R": true,
+    "outer_iterations_at_most_R_plus_1": true,
+    "sigma_is_only_scan_order_change": true,
+    "total_queries_O_n_plus_m_log_times_R": true,
+    "verification_queries_at_most_n_times_R_plus_1": true
+  },
+  "quantifier_lift": "The invariant and counting certificate holds for every fixed permutation; constructed permutations audit exact operational R values and do not substitute a rank metric.",
+  "status": "VERIFIED"
+}\n
+

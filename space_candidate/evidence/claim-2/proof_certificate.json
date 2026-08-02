@@ -1,0 +1,19 @@
+{
+  "derived_bound": "O(n m log n + min(n,m^3 log n) m log(1/epsilon))",
+  "obligations": {
+    "Jensen_gives_E_L_le_min_n_r_E_T": true,
+    "all_return_paths_are_correct": true,
+    "distinct_learn_calls_L_le_min_n_rT": true,
+    "every_nonterminal_candidate_violates_a_witness_agent": true,
+    "extreme_copy_double_count_gives_E_violator_weight_le_mW_over_r_plus_1": true,
+    "feasible_basis_size_at_most_m_minus_1_and_infeasible_Helly_witness_at_most_m": true,
+    "log_potential_expected_drift_at_least_log2_minus_one_quarter": true,
+    "r_16_m_minus_1_squared_gives_E_violator_weight_le_W_over_8_m_minus_1": true,
+    "sample_is_uniform_without_replacement_from_labeled_weight_multiset": true,
+    "stopping_time_telescope_gives_E_T_le_1_plus_m_log_n_over_c0": true,
+    "verification_nT_and_elicitation_L_m_log_precision_yield_claimed_bound": true
+  },
+  "quantifier_lift": "The sampling, witness, drift, stopping-time and Jensen certificates carry the expectation quantifier; seeded runs audit the implementation and finite constants.",
+  "status": "VERIFIED"
+}\n
+

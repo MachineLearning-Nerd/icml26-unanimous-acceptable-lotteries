@@ -1,0 +1,17 @@
+{
+  "derived_envelope": "q <= n(n+1)/2 + n[m+(m-1)(2 ceil(log2(1/epsilon))+2)]",
+  "obligations": {
+    "candidate_satisfies_every_learned_agent": true,
+    "iterations_at_most_n_plus_1": true,
+    "learn_hyperplane_calls_at_most_n": true,
+    "learned_constraint_equivalent_to_agent_oracle": true,
+    "null_from_select_implies_original_instance_infeasible": true,
+    "one_new_agent_removed_per_nonterminal_iteration": true,
+    "reject_all_agent_implies_original_instance_infeasible": true,
+    "returned_lottery_accepted_by_learned_and_unlearned_agents": true,
+    "total_queries_O_n2_plus_nm_log_1_over_epsilon": true,
+    "verification_queries_at_most_n_n_plus_1_over_2": true
+  },
+  "quantifier_lift": "Loop invariants and exact counts use arbitrary n,m and every epsilon satisfying the paper assumptions; finite sweeps audit the implementation rather than supplying the universal quantifier.",
+  "status": "VERIFIED"
+}\n

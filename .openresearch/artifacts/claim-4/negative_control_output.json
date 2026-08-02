@@ -1,0 +1,7 @@
+{
+  "allowing_error_would_invalidate_per_seed_deterministic_reduction": true,
+  "loose_threshold_family_is_not_singleton": true,
+  "nonvertex_single_agent_query_is_false_on_every_hard_instance": true,
+  "omitting_an_agent_allows_same_transcript_on_reject_all_substitution": true,
+  "passed": true
+}\n

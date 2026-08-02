@@ -1,0 +1,23 @@
+[
+  {
+    "epsilon_denominator": 32,
+    "grid_lotteries": 33,
+    "hard_instances": 31,
+    "p": 2,
+    "singleton_comparisons": 1023
+  },
+  {
+    "epsilon_denominator": 24,
+    "grid_lotteries": 325,
+    "hard_instances": 253,
+    "p": 3,
+    "singleton_comparisons": 82225
+  },
+  {
+    "epsilon_denominator": 12,
+    "grid_lotteries": 455,
+    "hard_instances": 165,
+    "p": 4,
+    "singleton_comparisons": 75075
+  }
+]\n

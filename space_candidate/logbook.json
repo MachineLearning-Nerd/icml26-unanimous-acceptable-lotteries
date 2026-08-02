@@ -11,12 +11,16 @@
     "title": "Current verification",
     "file": "pages/current/index.md",
     "children": [
+      {"slug": "current-claim-1", "title": "Claim 1 — VERIFIED", "file": "pages/current/claim-1/page.md", "children": []},
+      {"slug": "current-claim-2", "title": "Claim 2 — VERIFIED", "file": "pages/current/claim-2/page.md", "children": []},
       {
         "slug": "current-claim-3",
         "title": "Claim 3 — VERIFIED",
         "file": "pages/current/claim-3/page.md",
         "children": []
       },
+      {"slug": "current-claim-4", "title": "Claim 4 — VERIFIED", "file": "pages/current/claim-4/page.md", "children": []},
+      {"slug": "current-claim-5", "title": "Claim 5 — VERIFIED", "file": "pages/current/claim-5/page.md", "children": []},
       {
         "slug": "historical-rejected-baseline",
         "title": "Historical rejected baseline",

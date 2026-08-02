@@ -17,6 +17,6 @@ tags:
 
 # Repro - Learning Unanimously Acceptable Lotteries
 
-Current claim-by-claim verification starts at [Current verification](#/current). Claim 3 is the first upgraded exact contract; Claims 1, 2, 4, and 5 remain **BLOCKED** while their full evidence is built.
+Current claim-by-claim verification starts at [Current verification](#/current). All five exact contracts are now scientifically **VERIFIED** in the cumulative candidate; publication and any score change remain blocked until release checks and live judging.
 
 The previous judged artifact is preserved under [Historical rejected baseline](#/historical-rejected-baseline). Its pages remain unchanged and are not the current verifier.
