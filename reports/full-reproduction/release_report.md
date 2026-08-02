@@ -56,6 +56,10 @@ Every listed run used the exact fixed command above on Hugging Face `cpu-upgrade
 
 Total end-to-end duration is **7,090 s (1.969 h)**. Hugging Face documents `cpu-upgrade` at `$0.0005/min` (`$0.03/h`) with minute-based billing. Conservatively rounding every job upward gives **125 billable minutes and an estimated compute cost of $0.0625**; the Hugging Face billing page remains authoritative because `orx` duration can include non-billed lifecycle time. The final manifest-confirmation and post-publication audit jobs occur after this immutable report cut and are reported separately.
 
+### Post-freeze release validation
+
+The later release stages kept the same command and compute contract: a missing-UV image attempt exited before setup (16 s), manifest regeneration completed in 830 s, the committed-record gate completed in 862 s, and the exact published-revision audit completed in 789 s. Including those four jobs, the full campaign used **9,587 s (2.663 h)** end to end. Conservative per-job minute rounding gives **169 billable minutes and an estimated total cost of $0.0845**. The exact published Space revision is `b9ca864e0933fb79daa53802cc38bf971397eae8`; its 85 uploaded hashes, 20 protected historical paths, and two repeated canonical traversals passed on Hugging Face CPU. Its status is **AWAITING_LIVE_JUDGE**.
+
 ## Evidence and publication action
 
 The evaluator-visible evidence begins at `pages/current/index.md`. Claim contracts, source audits, methods, raw CSV/JSON, proof certificates, checker outputs, negative-control outputs, deviations, exact commands, seeds, SHAs, and CPU/runtime details are under `evidence/claim-1/` through `evidence/claim-5/`. The illustrated report is `reports/full-reproduction/report.md`; the tutorial is `notebooks/reproduction.py`.
