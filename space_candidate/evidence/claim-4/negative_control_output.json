@@ -4,5 +4,4 @@
   "nonvertex_single_agent_query_is_false_on_every_hard_instance": true,
   "omitting_an_agent_allows_same_transcript_on_reject_all_substitution": true,
   "passed": true
-}\n
-
+}

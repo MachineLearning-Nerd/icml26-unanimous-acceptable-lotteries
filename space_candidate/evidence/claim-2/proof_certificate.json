@@ -15,5 +15,4 @@
   },
   "quantifier_lift": "The sampling, witness, drift, stopping-time and Jensen certificates carry the expectation quantifier; seeded runs audit the implementation and finite constants.",
   "status": "VERIFIED"
-}\n
-
+}

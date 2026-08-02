@@ -4,5 +4,4 @@
   "passed": true,
   "with_replacement_mutation_can_duplicate_and_miss_an_agent": true,
   "without_replacement_full_two_copy_sample_has_both_agents": true
-}\n
-
+}

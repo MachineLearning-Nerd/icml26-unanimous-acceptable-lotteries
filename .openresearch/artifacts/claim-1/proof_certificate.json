@@ -14,4 +14,4 @@
   },
   "quantifier_lift": "Loop invariants and exact counts use arbitrary n,m and every epsilon satisfying the paper assumptions; finite sweeps audit the implementation rather than supplying the universal quantifier.",
   "status": "VERIFIED"
-}\n
+}

@@ -25,6 +25,7 @@ from claim1_deterministic import run_claim1_deterministic
 from claim5_prediction import run_claim5_prediction
 from claim4_lower_bound import run_claim4_lower_bound
 from claim2_randomized import run_claim2_randomized
+from report_assets import generate_report_assets
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "outputs"
@@ -297,6 +298,7 @@ def main():
     claim2_upgrade = run_claim2_randomized(learn_hyperplane, ROOT)
     subprocess.run([sys.executable, str(ROOT / ".openresearch" / "artifacts" / "claim-2" / "verify_claim.py")],
                    cwd=ROOT, check=True)
+    report_assets = generate_report_assets(ROOT)
     claim3_upgrade = {"status": "VERIFIED", "confidence": "HIGH",
                       "routes": {"exact_scaling": claim3_scaling, "exhaustive_correctness": claim3_exhaustive}}
     campaign_claims = {
@@ -312,6 +314,7 @@ def main():
               "campaign_claims": campaign_claims,
               "scientific_claims_resolved": all(v["status"] in {"VERIFIED", "FALSIFIED"} for v in campaign_claims.values()),
               "publication_eligible": False,
+              "report_assets": report_assets,
               "execution": {"git_sha": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
                             "python": platform.python_version(), "logical_cpus": os.cpu_count(),
                             "cpu_affinity": cpu_affinity, "runtime_seconds": round(time.perf_counter() - started, 6)},

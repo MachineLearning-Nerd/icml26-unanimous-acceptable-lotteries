@@ -13,5 +13,4 @@
   },
   "quantifier_lift": "The invariant and counting certificate holds for every fixed permutation; constructed permutations audit exact operational R values and do not substitute a rank metric.",
   "status": "VERIFIED"
-}\n
-
+}

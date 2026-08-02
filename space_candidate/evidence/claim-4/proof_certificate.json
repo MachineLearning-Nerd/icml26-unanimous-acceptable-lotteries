@@ -16,5 +16,4 @@
   },
   "quantifier_lift": "The decision-tree, Kraft, and Yao obligations quantify over every correct deterministic or always-correct randomized algorithm; finite enumeration audits the hard-family construction and minimax recurrence.",
   "status": "VERIFIED"
-}\n
-
+}
