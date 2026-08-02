@@ -1,0 +1,23 @@
+{
+  "assumptions": [
+    "the paper's epsilon-quantized membership-query model",
+    "the prediction is a fixed permutation of all agents",
+    "Algorithm 2 changes only its unlearned-agent scan order to that permutation",
+    "R(sigma) is the number of agents on which LearnHyperplane is actually invoked",
+    "the stated multiplicative bound assumes R(sigma) >= 1; R=0 uses the paper's n-query footnote"
+  ],
+  "claim": "Algorithm 2[sigma] is correct and uses O((n + m log(1/epsilon)) R(sigma)) queries for R(sigma)>=1, with smooth linear degradation in operational record quality.",
+  "claim_id": 5,
+  "failure_conditions": [
+    "the measured LearnHyperplane count differs from R",
+    "a returned lottery is not unanimously acceptable",
+    "an exact count exceeds the R-dependent finite envelope",
+    "the R=0 exception or a negative control is missed"
+  ],
+  "paper_anchors": [
+    "Permutation Predictions definition of H(sigma) and R(sigma)",
+    "Theorem 5.1: thm:perm-det",
+    "Appendix proof: Proof of thm:perm-det"
+  ],
+  "verdict": "VERIFIED"
+}

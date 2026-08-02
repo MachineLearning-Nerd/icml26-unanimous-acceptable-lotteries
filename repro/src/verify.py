@@ -22,6 +22,7 @@ from pathlib import Path
 from claim3_scaling import run_claim3_scaling
 from claim3_exhaustive import run_claim3_exhaustive
 from claim1_deterministic import run_claim1_deterministic
+from claim5_prediction import run_claim5_prediction
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "outputs"
@@ -285,6 +286,9 @@ def main():
     claim1_upgrade = run_claim1_deterministic(Agent, learn_hyperplane, ROOT)
     subprocess.run([sys.executable, str(ROOT / ".openresearch" / "artifacts" / "claim-1" / "verify_claim.py")],
                    cwd=ROOT, check=True)
+    claim5_upgrade = run_claim5_prediction(learn_hyperplane, ROOT)
+    subprocess.run([sys.executable, str(ROOT / ".openresearch" / "artifacts" / "claim-5" / "verify_claim.py")],
+                   cwd=ROOT, check=True)
     claim3_upgrade = {"status": "VERIFIED", "confidence": "HIGH",
                       "routes": {"exact_scaling": claim3_scaling, "exhaustive_correctness": claim3_exhaustive}}
     campaign_claims = {
@@ -292,7 +296,7 @@ def main():
         "claim_2_randomized": {"status": "BLOCKED", "reason": "full-scale contract not yet executed"},
         "claim_3_halfspace": claim3_upgrade,
         "claim_4_lower_bounds": {"status": "BLOCKED", "reason": "minimax certificate not yet executed"},
-        "claim_5_prediction": {"status": "BLOCKED", "reason": "full-scale contract not yet executed"},
+        "claim_5_prediction": claim5_upgrade,
     }
     cpu_affinity = len(os.sched_getaffinity(0)) if hasattr(os, "sched_getaffinity") else os.cpu_count()
     result = {"paper": "daiccpXZfU", "arxiv": "2604.17505", "all_claims_passed": all(v["passed"] for v in claims.values()),
