@@ -1,0 +1,8 @@
+{
+  "assumptions": ["n,m>=2", "epsilon-quantized membership-query model", "uniform sampling without replacement from the labeled weighted multiset", "lexicographic Select", "violator weights double", "randomness affects query count but never correctness"],
+  "claim": "Algorithm 3 is always correct and has expected query complexity O(nm log n + min(n,m^3 log n) m log(1/epsilon)).",
+  "claim_id": 2,
+  "failure_conditions": ["incorrect return", "non-source sampler or update", "L>min(n,rT)", "observed mean exceeds the independently derived finite expectation envelope", "proof or control failure"],
+  "paper_anchors": ["Algorithm 3: alg:cardinal_randomized", "Theorem 3.4: thm:alg_randomized", "sampling, witness, drift, ET, and Jensen lemmas"],
+  "verdict": "VERIFIED"
+}

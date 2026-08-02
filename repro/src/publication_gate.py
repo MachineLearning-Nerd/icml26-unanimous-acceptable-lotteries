@@ -14,6 +14,8 @@ assert verdict["campaign_claims"]["claim_3_halfspace"]["status"] == "VERIFIED"
 assert verdict["campaign_claims"]["claim_1_deterministic"]["status"] == "VERIFIED"
 assert verdict["campaign_claims"]["claim_5_prediction"]["status"] == "VERIFIED"
 assert verdict["campaign_claims"]["claim_4_lower_bounds"]["status"] == "VERIFIED"
+assert verdict["campaign_claims"]["claim_2_randomized"]["status"] == "VERIFIED"
+assert verdict["scientific_claims_resolved"]
 assert (root / "RESULTS.md").is_file() and (root / "docs" / "SOURCE_AUDIT.md").is_file()
 gate = {"paper": "daiccpXZfU", "arxiv": "2604.17505", "claim_count": 5,
         "publication_eligible": False, "tests_passed": True, "publication_gate_passed": False,
@@ -22,7 +24,8 @@ gate = {"paper": "daiccpXZfU", "arxiv": "2604.17505", "claim_count": 5,
                    "claim_4_minimax_certificate_verified": True,
                    "claim_3_exact_scaling_verified": True,
                    "claim_3_exhaustive_certificate_verified": True,
-                   "all_five_current_claims_resolved": False, "evaluator_visibility_complete": False},
+                   "claim_2_expected_complexity_verified": True,
+                   "all_five_current_claims_resolved": True, "evaluator_visibility_complete": False},
         "scope": "campaign checkpoint; publication remains blocked until all five current contracts and visibility gates pass"}
 (root / "outputs" / "publication_gate.json").write_text(json.dumps(gate, indent=2, sort_keys=True) + "\n")
 print(json.dumps(gate, indent=2, sort_keys=True))
