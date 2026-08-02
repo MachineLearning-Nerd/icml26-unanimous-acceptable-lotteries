@@ -13,11 +13,13 @@ assert all(v.get("passed") and v.get("source") and v.get("mechanism") and v.get(
 assert verdict["campaign_claims"]["claim_3_halfspace"]["status"] == "VERIFIED"
 assert verdict["campaign_claims"]["claim_1_deterministic"]["status"] == "VERIFIED"
 assert verdict["campaign_claims"]["claim_5_prediction"]["status"] == "VERIFIED"
+assert verdict["campaign_claims"]["claim_4_lower_bounds"]["status"] == "VERIFIED"
 assert (root / "RESULTS.md").is_file() and (root / "docs" / "SOURCE_AUDIT.md").is_file()
 gate = {"paper": "daiccpXZfU", "arxiv": "2604.17505", "claim_count": 5,
         "publication_eligible": False, "tests_passed": True, "publication_gate_passed": False,
         "checks": {"historical_regression_suite_passes": True, "claim_1_exact_certificate_verified": True,
                    "claim_5_record_quality_verified": True,
+                   "claim_4_minimax_certificate_verified": True,
                    "claim_3_exact_scaling_verified": True,
                    "claim_3_exhaustive_certificate_verified": True,
                    "all_five_current_claims_resolved": False, "evaluator_visibility_complete": False},
