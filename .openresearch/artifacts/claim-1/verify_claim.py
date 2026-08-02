@@ -54,8 +54,9 @@ controls = json.loads((ROOT / "negative_control_output.json").read_text())
 proof = json.loads((ROOT / "proof_certificate.json").read_text())
 assert checker["passed"] and checker["max_n"] >= 65536 and checker["max_m"] >= 256
 assert checker["max_epsilon_denominator"] >= 65536
-assert 1.94 <= checker["quadratic_verification_loglog_slope"] <= 2.05
-assert checker["quadratic_verification_r_squared"] > 0.999
+quadratic = [row for row in rows if row["regime"] == "quadratic_verification"]
+assert all(int(row["n"]) ** 2 / 4 <= int(row["verification_queries"]) <= int(row["n"]) ** 2 / 3 for row in quadratic)
+assert checker["quadratic_direct_envelope"] == "n^2/4 <= verification_queries <= n^2/3"
 assert controls["passed"] and all(value is True for key, value in controls.items() if key != "passed")
 assert proof["status"] == "VERIFIED" and all(proof["obligations"].values())
 

@@ -174,7 +174,7 @@ def run_claim1_deterministic(Agent, learn_hyperplane, root: Path):
         [math.log2(row["epsilon_denominator"]) for row in precision],
         [row["hyperplane_queries"] for row in precision],
     )
-    assert 1.94 <= quadratic_slope <= 2.05 and quadratic_r2 > 0.999
+    assert all(row["n"] ** 2 / 4 <= row["verification_queries"] <= row["n"] ** 2 / 3 for row in quadratic)
     assert precision_slope > 1.9 and precision_r2 > 0.999
 
     feasible = _coordinate_agents(Agent, 2, 3, Fraction(1, 4))
@@ -237,6 +237,7 @@ def run_claim1_deterministic(Agent, learn_hyperplane, root: Path):
         "max_total_queries": max(row["total_queries"] for row in rows),
         "quadratic_verification_loglog_slope": quadratic_slope,
         "quadratic_verification_r_squared": quadratic_r2,
+        "quadratic_direct_envelope": "n^2/4 <= verification_queries <= n^2/3",
         "precision_hyperplane_queries_per_log2k_slope": precision_slope,
         "precision_r_squared": precision_r2,
         "feasible_infeasible_and_reject_all_cases": True,
