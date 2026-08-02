@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<rect width="1200" height="675" fill="#f8fafc"/>
+<text x="60" y="62" font-family="Inter,Arial,sans-serif" font-size="32" text-anchor="start" fill="#102a43" font-weight="700">The lower bound is certified over all correct algorithms</text>
+<text x="60" y="94" font-family="Inter,Arial,sans-serif" font-size="18" text-anchor="start" fill="#627d98" font-weight="400">Decision trees, Kraft counting, Yao lifting, exhaustive hard-family checks, and an exact single-agent minimax recurrence.</text>
+<rect x="110" y="160" width="980" height="370" rx="12" fill="#ffffff" stroke="#d9e2ec"/>
+<rect x="165" y="223.0" width="105" height="307.0" rx="8" fill="#0f9d8a"/>
+<text x="217.5" y="211.0047281323877" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="middle" fill="#0f9d8a" font-weight="700">0.990</text>
+<text x="217.5" y="556" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" fill="#627d98" font-weight="400">n=4,096</text>
+<text x="217.5" y="578" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" fill="#627d98" font-weight="400">m=16</text>
+<rect x="322" y="221.4" width="105" height="308.6" rx="8" fill="#0f9d8a"/>
+<text x="374.5" y="209.35952617777377" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="middle" fill="#0f9d8a" font-weight="700">0.996</text>
+<text x="374.5" y="556" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" fill="#627d98" font-weight="400">n=65,536</text>
+<text x="374.5" y="578" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" fill="#627d98" font-weight="400">m=64</text>
+<rect x="479" y="220.2" width="105" height="309.8" rx="8" fill="#0f9d8a"/>
+<text x="531.5" y="208.21968172599372" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="middle" fill="#0f9d8a" font-weight="700">0.999</text>
+<text x="531.5" y="556" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" fill="#627d98" font-weight="400">n=1,000,000</text>
+<text x="531.5" y="578" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" fill="#627d98" font-weight="400">m=128</text>
+<rect x="636" y="277.6" width="105" height="252.4" rx="8" fill="#f59e0b"/>
+<text x="688.5" y="265.57142857142856" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="middle" fill="#f59e0b" font-weight="700">0.814</text>
+<text x="688.5" y="556" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" fill="#627d98" font-weight="400">n=8</text>
+<text x="688.5" y="578" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" fill="#627d98" font-weight="400">m=16</text>
+<rect x="793" y="300.7" width="105" height="229.3" rx="8" fill="#f59e0b"/>
+<text x="845.5" y="288.7142857142857" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="middle" fill="#f59e0b" font-weight="700">0.740</text>
+<text x="845.5" y="556" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" fill="#627d98" font-weight="400">n=32</text>
+<text x="845.5" y="578" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" fill="#627d98" font-weight="400">m=64</text>
+<rect x="950" y="309.5" width="105" height="220.5" rx="8" fill="#f59e0b"/>
+<text x="1002.5" y="297.4940476190476" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="middle" fill="#f59e0b" font-weight="700">0.711</text>
+<text x="1002.5" y="556" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" fill="#627d98" font-weight="400">n=64</text>
+<text x="1002.5" y="578" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="middle" fill="#627d98" font-weight="400">m=128</text>
+<text x="110" y="135" font-family="Inter,Arial,sans-serif" font-size="18" text-anchor="start" fill="#627d98" font-weight="400">certified lower bound / asymptotic target (unit constant)</text>
+<text x="110" y="604" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="start" fill="#0f9d8a" font-weight="700">Teal: n ≥ m</text>
+<text x="250" y="604" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="start" fill="#f59e0b" font-weight="700">Orange: n &lt; m</text>
+<text x="1090" y="604" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="end" fill="#627d98" font-weight="400">also exact Ω(m) minimax through m=64</text>
+<text x="1140" y="648" font-family="Inter,Arial,sans-serif" font-size="15" text-anchor="end" fill="#627d98" font-weight="400">arXiv:2604.17505 reproduction</text>
+</svg>

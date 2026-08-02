@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<rect width="1200" height="675" fill="#f8fafc"/>
+<text x="60" y="62" font-family="Inter,Arial,sans-serif" font-size="32" text-anchor="start" fill="#102a43" font-weight="700">Five exact claim contracts now resolve</text>
+<text x="60" y="94" font-family="Inter,Arial,sans-serif" font-size="18" text-anchor="start" fill="#627d98" font-weight="400">Scientific verdicts from the cumulative Hugging Face CPU run; these are not live judge points.</text>
+<rect x="60" y="128" width="1080" height="76" rx="16" fill="#ffffff" stroke="#d9e2ec"/>
+<circle cx="103" cy="166" r="22" fill="#0f9d8a"/>
+<text x="103" y="174" font-family="Inter,Arial,sans-serif" font-size="25" text-anchor="middle" fill="#ffffff" font-weight="700">✓</text>
+<text x="142" y="160" font-family="Inter,Arial,sans-serif" font-size="22" text-anchor="start" fill="#102a43" font-weight="700">Claim 1: VERIFIED</text>
+<text x="142" y="187" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="start" fill="#627d98" font-weight="400">n=65,536; m=256; K=65,536</text>
+<text x="1100" y="173" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="end" fill="#0f9d8a" font-weight="700">HIGH</text>
+<rect x="60" y="226" width="1080" height="76" rx="16" fill="#ffffff" stroke="#d9e2ec"/>
+<circle cx="103" cy="264" r="22" fill="#0f9d8a"/>
+<text x="103" y="272" font-family="Inter,Arial,sans-serif" font-size="25" text-anchor="middle" fill="#ffffff" font-weight="700">✓</text>
+<text x="142" y="258" font-family="Inter,Arial,sans-serif" font-size="22" text-anchor="start" fill="#102a43" font-weight="700">Claim 2: VERIFIED</text>
+<text x="142" y="285" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="start" fill="#627d98" font-weight="400">n=32,768; 40 seeded runs; m up to 32</text>
+<text x="1100" y="271" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="end" fill="#0f9d8a" font-weight="700">HIGH</text>
+<rect x="60" y="324" width="1080" height="76" rx="16" fill="#ffffff" stroke="#d9e2ec"/>
+<circle cx="103" cy="362" r="22" fill="#0f9d8a"/>
+<text x="103" y="370" font-family="Inter,Arial,sans-serif" font-size="25" text-anchor="middle" fill="#ffffff" font-weight="700">✓</text>
+<text x="142" y="356" font-family="Inter,Arial,sans-serif" font-size="22" text-anchor="start" fill="#102a43" font-weight="700">Claim 3: VERIFIED</text>
+<text x="142" y="383" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="start" fill="#627d98" font-weight="400">m=256; K=1,024; 9,882,192 cells</text>
+<text x="1100" y="369" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="end" fill="#0f9d8a" font-weight="700">HIGH</text>
+<rect x="60" y="422" width="1080" height="76" rx="16" fill="#ffffff" stroke="#d9e2ec"/>
+<circle cx="103" cy="460" r="22" fill="#0f9d8a"/>
+<text x="103" y="468" font-family="Inter,Arial,sans-serif" font-size="25" text-anchor="middle" fill="#ffffff" font-weight="700">✓</text>
+<text x="142" y="454" font-family="Inter,Arial,sans-serif" font-size="22" text-anchor="start" fill="#102a43" font-weight="700">Claim 4: VERIFIED</text>
+<text x="142" y="481" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="start" fill="#627d98" font-weight="400">n=1,000,000; m=128; 449 hard instances</text>
+<text x="1100" y="467" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="end" fill="#0f9d8a" font-weight="700">HIGH</text>
+<rect x="60" y="520" width="1080" height="76" rx="16" fill="#ffffff" stroke="#d9e2ec"/>
+<circle cx="103" cy="558" r="22" fill="#0f9d8a"/>
+<text x="103" y="566" font-family="Inter,Arial,sans-serif" font-size="25" text-anchor="middle" fill="#ffffff" font-weight="700">✓</text>
+<text x="142" y="552" font-family="Inter,Arial,sans-serif" font-size="22" text-anchor="start" fill="#102a43" font-weight="700">Claim 5: VERIFIED</text>
+<text x="142" y="579" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="start" fill="#627d98" font-weight="400">n=65,536; m=256; R up to 256</text>
+<text x="1100" y="565" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="end" fill="#0f9d8a" font-weight="700">HIGH</text>
+<text x="1140" y="648" font-family="Inter,Arial,sans-serif" font-size="15" text-anchor="end" fill="#627d98" font-weight="400">arXiv:2604.17505 reproduction</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<rect width="1200" height="675" fill="#f8fafc"/>
+<text x="60" y="62" font-family="Inter,Arial,sans-serif" font-size="32" text-anchor="start" fill="#102a43" font-weight="700">Measured query growth matches the exact envelopes</text>
+<text x="60" y="94" font-family="Inter,Arial,sans-serif" font-size="18" text-anchor="start" fill="#627d98" font-weight="400">Log–log axes; independent sweeps, exact rational arithmetic, and no formula-derived query budget.</text>
+<rect x="80" y="165" width="480" height="380" rx="12" fill="#ffffff" stroke="#d9e2ec"/>
+<polyline points="80.0,545.0 123.6,536.1 167.3,521.3 210.9,498.8 254.5,468.7 298.2,432.1 341.8,391.3 385.5,347.8 429.1,302.9 472.7,257.3 516.4,211.2 560.0,165.0" fill="none" stroke="#1677ff" stroke-width="4"/>
+<circle cx="80.0" cy="545.0" r="5" fill="#1677ff"/>
+<circle cx="123.6" cy="536.1" r="5" fill="#1677ff"/>
+<circle cx="167.3" cy="521.3" r="5" fill="#1677ff"/>
+<circle cx="210.9" cy="498.8" r="5" fill="#1677ff"/>
+<circle cx="254.5" cy="468.7" r="5" fill="#1677ff"/>
+<circle cx="298.2" cy="432.1" r="5" fill="#1677ff"/>
+<circle cx="341.8" cy="391.3" r="5" fill="#1677ff"/>
+<circle cx="385.5" cy="347.8" r="5" fill="#1677ff"/>
+<circle cx="429.1" cy="302.9" r="5" fill="#1677ff"/>
+<circle cx="472.7" cy="257.3" r="5" fill="#1677ff"/>
+<circle cx="516.4" cy="211.2" r="5" fill="#1677ff"/>
+<circle cx="560.0" cy="165.0" r="5" fill="#1677ff"/>
+<rect x="640" y="165" width="480" height="380" rx="12" fill="#ffffff" stroke="#d9e2ec"/>
+<polyline points="640.0,545.0 708.6,471.0 777.1,413.0 845.7,360.6 914.3,310.5 982.9,261.6 1051.4,213.2 1120.0,165.0" fill="none" stroke="#0f9d8a" stroke-width="4"/>
+<circle cx="640.0" cy="545.0" r="5" fill="#0f9d8a"/>
+<circle cx="708.6" cy="471.0" r="5" fill="#0f9d8a"/>
+<circle cx="777.1" cy="413.0" r="5" fill="#0f9d8a"/>
+<circle cx="845.7" cy="360.6" r="5" fill="#0f9d8a"/>
+<circle cx="914.3" cy="310.5" r="5" fill="#0f9d8a"/>
+<circle cx="982.9" cy="261.6" r="5" fill="#0f9d8a"/>
+<circle cx="1051.4" cy="213.2" r="5" fill="#0f9d8a"/>
+<circle cx="1120.0" cy="165.0" r="5" fill="#0f9d8a"/>
+<text x="80" y="145" font-family="Inter,Arial,sans-serif" font-size="21" text-anchor="start" fill="#102a43" font-weight="700">Algorithm 2: n sweep</text>
+<text x="640" y="145" font-family="Inter,Arial,sans-serif" font-size="21" text-anchor="start" fill="#102a43" font-weight="700">LearnHyperplane: m sweep at K=1,024</text>
+<text x="80" y="582" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="start" fill="#627d98" font-weight="400">n 32 → 65,536</text>
+<text x="560" y="582" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="end" fill="#1677ff" font-weight="700">q 591,568</text>
+<text x="640" y="582" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="start" fill="#627d98" font-weight="400">m 2 → 256</text>
+<text x="1120" y="582" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="end" fill="#0f9d8a" font-weight="700">q 5,866</text>
+<text x="552.0" y="151.0" font-family="Inter,Arial,sans-serif" font-size="15" text-anchor="end" fill="#1677ff" font-weight="400">591,568</text>
+<text x="1112.0" y="151.0" font-family="Inter,Arial,sans-serif" font-size="15" text-anchor="end" fill="#0f9d8a" font-weight="400">5,866</text>
+<text x="1140" y="648" font-family="Inter,Arial,sans-serif" font-size="15" text-anchor="end" fill="#627d98" font-weight="400">arXiv:2604.17505 reproduction</text>
+</svg>

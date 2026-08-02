@@ -11,6 +11,7 @@
     "title": "Current verification",
     "file": "pages/current/index.md",
     "children": [
+      {"slug": "current-report", "title": "Illustrated cumulative report", "file": "reports/full-reproduction/report.md", "children": []},
       {"slug": "current-claim-1", "title": "Claim 1 — VERIFIED", "file": "pages/current/claim-1/page.md", "children": []},
       {"slug": "current-claim-2", "title": "Claim 2 — VERIFIED", "file": "pages/current/claim-2/page.md", "children": []},
       {

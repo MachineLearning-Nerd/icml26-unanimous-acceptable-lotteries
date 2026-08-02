@@ -39,6 +39,8 @@ The exact worst-case family forces all `m-1` edge searches. Every measured count
 - [Scaling verifier source](https://huggingface.co/spaces/DineshAI/daiccpXZfU/blob/main/code/claim3_scaling.py)
 - [Exhaustive verifier source](https://huggingface.co/spaces/DineshAI/daiccpXZfU/blob/main/code/claim3_exhaustive.py)
 - [Standalone checker source](https://huggingface.co/spaces/DineshAI/daiccpXZfU/blob/main/code/verify_claim.py)
+- [Scaling controls](https://huggingface.co/spaces/DineshAI/daiccpXZfU/blob/main/evidence/claim-3/scaling_negative_control_output.json), [exhaustive controls](https://huggingface.co/spaces/DineshAI/daiccpXZfU/blob/main/evidence/claim-3/exhaustive_negative_control_output.json), [scaling proof](https://huggingface.co/spaces/DineshAI/daiccpXZfU/blob/main/evidence/claim-3/scaling_proof_certificate.json), [exhaustive proof](https://huggingface.co/spaces/DineshAI/daiccpXZfU/blob/main/evidence/claim-3/exhaustive_proof_certificate.json)
+- [Claim contract](https://huggingface.co/spaces/DineshAI/daiccpXZfU/blob/main/evidence/claim-3/claim_contract.json), [source audit](https://huggingface.co/spaces/DineshAI/daiccpXZfU/blob/main/evidence/claim-3/source_audit.md), [method](https://huggingface.co/spaces/DineshAI/daiccpXZfU/blob/main/evidence/claim-3/method.md), [full evaluator record](https://huggingface.co/spaces/DineshAI/daiccpXZfU/blob/main/evidence/claim-3/EVAL.md)
 
 ## Controls and limitations
 

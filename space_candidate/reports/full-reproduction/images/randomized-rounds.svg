@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<rect width="1200" height="675" fill="#f8fafc"/>
+<text x="60" y="62" font-family="Inter,Arial,sans-serif" font-size="32" text-anchor="start" fill="#102a43" font-weight="700">Algorithm 3 terminates in 11.5–16.25 rounds</text>
+<text x="60" y="94" font-family="Inter,Arial,sans-serif" font-size="18" text-anchor="start" fill="#627d98" font-weight="400">Exact weight-biased sampling without replacement; every mean lies below the independently derived finite envelope.</text>
+<rect x="110" y="150" width="980" height="390" rx="12" fill="#ffffff" stroke="#d9e2ec"/>
+<line x1="155.0" y1="348.7" x2="155.0" y2="302.9" stroke="#1677ff" stroke-width="4"/>
+<line x1="145.0" y1="348.7" x2="165.0" y2="348.7" stroke="#1677ff" stroke-width="3"/>
+<line x1="145.0" y1="302.9" x2="165.0" y2="302.9" stroke="#1677ff" stroke-width="3"/>
+<circle cx="155.0" cy="325.8" r="9" fill="#1677ff"/>
+<text x="155.0" y="570" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="middle" fill="#627d98" font-weight="400">4</text>
+<text x="155.0" y="308.81890022710473" font-family="Inter,Arial,sans-serif" font-size="15" text-anchor="middle" fill="#1677ff" font-weight="700">11.5</text>
+<line x1="282.1" y1="343.2" x2="282.1" y2="294.5" stroke="#1677ff" stroke-width="4"/>
+<line x1="272.1" y1="343.2" x2="292.1" y2="343.2" stroke="#1677ff" stroke-width="3"/>
+<line x1="272.1" y1="294.5" x2="292.1" y2="294.5" stroke="#1677ff" stroke-width="3"/>
+<circle cx="282.1" cy="318.8" r="9" fill="#1677ff"/>
+<text x="282.1428571428571" y="570" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="middle" fill="#627d98" font-weight="400">8</text>
+<text x="282.1428571428571" y="301.8347339301625" font-family="Inter,Arial,sans-serif" font-size="15" text-anchor="middle" fill="#1677ff" font-weight="700">11.875</text>
+<line x1="536.4" y1="311.2" x2="536.4" y2="252.0" stroke="#1677ff" stroke-width="4"/>
+<line x1="526.4" y1="311.2" x2="546.4" y2="311.2" stroke="#1677ff" stroke-width="3"/>
+<line x1="526.4" y1="252.0" x2="546.4" y2="252.0" stroke="#1677ff" stroke-width="3"/>
+<circle cx="536.4" cy="281.6" r="9" fill="#1677ff"/>
+<text x="536.4285714285714" y="570" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="middle" fill="#627d98" font-weight="400">16</text>
+<text x="536.4285714285714" y="264.5858470131372" font-family="Inter,Arial,sans-serif" font-size="15" text-anchor="middle" fill="#1677ff" font-weight="700">13.875</text>
+<line x1="790.7" y1="279.8" x2="790.7" y2="218.2" stroke="#1677ff" stroke-width="4"/>
+<line x1="780.7" y1="279.8" x2="800.7" y2="279.8" stroke="#1677ff" stroke-width="3"/>
+<line x1="780.7" y1="218.2" x2="800.7" y2="218.2" stroke="#1677ff" stroke-width="3"/>
+<circle cx="790.7" cy="249.0" r="9" fill="#1677ff"/>
+<text x="790.7142857142857" y="570" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="middle" fill="#627d98" font-weight="400">24</text>
+<text x="790.7142857142857" y="231.9930709607401" font-family="Inter,Arial,sans-serif" font-size="15" text-anchor="middle" fill="#1677ff" font-weight="700">15.625</text>
+<line x1="1045.0" y1="287.5" x2="1045.0" y2="187.2" stroke="#1677ff" stroke-width="4"/>
+<line x1="1035.0" y1="287.5" x2="1055.0" y2="287.5" stroke="#1677ff" stroke-width="3"/>
+<line x1="1035.0" y1="187.2" x2="1055.0" y2="187.2" stroke="#1677ff" stroke-width="3"/>
+<circle cx="1045.0" cy="237.4" r="9" fill="#1677ff"/>
+<text x="1045.0" y="570" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="middle" fill="#627d98" font-weight="400">32</text>
+<text x="1045.0" y="220.35279379916972" font-family="Inter,Arial,sans-serif" font-size="15" text-anchor="middle" fill="#1677ff" font-weight="700">16.25</text>
+<text x="600" y="585" font-family="Inter,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#627d98" font-weight="400">alternatives m</text>
+<text x="110" y="128" font-family="Inter,Arial,sans-serif" font-size="18" text-anchor="start" fill="#627d98" font-weight="400">mean rounds ± 95% CI</text>
+<text x="1090" y="128" font-family="Inter,Arial,sans-serif" font-size="18" text-anchor="end" fill="#627d98" font-weight="400">n=32,768 · K=64 · 8 seeds/m</text>
+<text x="1140" y="648" font-family="Inter,Arial,sans-serif" font-size="15" text-anchor="end" fill="#627d98" font-weight="400">arXiv:2604.17505 reproduction</text>
+</svg>

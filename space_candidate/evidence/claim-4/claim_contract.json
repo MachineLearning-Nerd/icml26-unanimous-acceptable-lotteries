@@ -1,0 +1,23 @@
+{
+  "assumptions": [
+    "the epsilon-quantized membership-query model with binary utilities permitted",
+    "1/epsilon is integral and the preliminary counting regime m <= (1/epsilon)^(1-delta) holds for fixed delta>0",
+    "algorithms are correct on every instance",
+    "randomized algorithms are correct for every realization; only query count is random"
+  ],
+  "claim": "Every correct deterministic or randomized algorithm has worst-case expected query complexity Omega((n-min(n,m)) + (min(n,m)-1) log(1/epsilon)); for n=1, Omega(m) queries are necessary.",
+  "claim_id": 4,
+  "failure_conditions": [
+    "a hard-family instance is not singleton feasible",
+    "the leaf count or binomial bound is wrong",
+    "dummy pruning, Kraft, or Yao obligations fail",
+    "the exhaustive single-agent minimax value differs from m",
+    "an invalid-assumption control is accepted"
+  ],
+  "paper_anchors": [
+    "Theorem 4.1: thm:lowerbound_query",
+    "Lemmas D1-D5 in the omitted proof",
+    "Theorem 4.2: thm:lb_oneagent"
+  ],
+  "verdict": "VERIFIED"
+}
