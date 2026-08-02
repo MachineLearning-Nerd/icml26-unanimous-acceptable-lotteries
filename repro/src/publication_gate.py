@@ -9,6 +9,7 @@ import json
 import re
 import shutil
 import subprocess
+import sys
 import tempfile
 import urllib.parse
 import urllib.request
@@ -324,6 +325,8 @@ def main():
     }
     (ROOT / "outputs" / "publication_gate.json").write_text(json.dumps(gate, indent=2, sort_keys=True) + "\n")
     print(json.dumps(gate, indent=2, sort_keys=True))
+    if publication_eligible:
+        subprocess.run([sys.executable, ROOT / "repro" / "src" / "post_publication_audit.py"], check=True)
 
 
 if __name__ == "__main__":
