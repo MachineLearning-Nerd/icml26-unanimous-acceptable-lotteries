@@ -11,7 +11,11 @@ from fractions import Fraction
 import itertools
 import json
 import math
+import os
+import platform
 import random
+import subprocess
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -264,16 +268,22 @@ def c5_learning_augmented_order():
 
 
 def main():
+    started = time.perf_counter()
     OUT.mkdir(parents=True, exist_ok=True)
     claims = {"claim_1_halfspace": c1_learn_hyperplane(), "claim_2_deterministic": c2_deterministic_feasibility(),
               "claim_3_randomized": c3_randomized_reweighting(), "claim_4_lower_bound": c4_lower_bound_family(),
               "claim_5_prediction": c5_learning_augmented_order()}
+    cpu_affinity = len(os.sched_getaffinity(0)) if hasattr(os, "sched_getaffinity") else os.cpu_count()
     result = {"paper": "daiccpXZfU", "arxiv": "2604.17505", "all_claims_passed": all(v["passed"] for v in claims.values()),
               "claim_count": len(claims), "claims": claims,
               "publication_eligible": len(claims) == 5,
+              "execution": {"git_sha": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
+                            "python": platform.python_version(), "logical_cpus": os.cpu_count(),
+                            "cpu_affinity": cpu_affinity, "runtime_seconds": round(time.perf_counter() - started, 6)},
               "limitations": "Finite executions validate the exact source constructions and controls; the public proof supplies the universal asymptotic quantifiers."}
     (OUT / "verdict.json").write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
-    print(json.dumps({"all_claims_passed": result["all_claims_passed"], "claim_count": len(claims), "publication_eligible": result["publication_eligible"]}, indent=2))
+    print(json.dumps({"all_claims_passed": result["all_claims_passed"], "claim_count": len(claims),
+                      "publication_eligible": result["publication_eligible"], "execution": result["execution"]}, indent=2))
 
 
 if __name__ == "__main__":
