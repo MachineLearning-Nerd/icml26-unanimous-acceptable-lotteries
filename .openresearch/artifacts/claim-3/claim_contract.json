@@ -1,0 +1,24 @@
+{
+  "claim_id": 3,
+  "verdict_target": "VERIFIED",
+  "statement": "For every m >= 2 and epsilon in (0, 1/2] with integer 1/epsilon, and every agent whose utilities and positive threshold are epsilon-quantized, Algorithm 1 returns an exact representation of that agent's acceptable halfspace using O(m log(1/epsilon)) membership queries.",
+  "source": {
+    "arxiv": "2604.17505",
+    "anchors": ["Algorithm 1", "Lemma 3.1", "Lemma 3.2"],
+    "tex_labels": ["alg:learnhyperplane", "lem:learnhyperplane_queries", "lem:learnhyperplane_correctness"]
+  },
+  "assumptions": [
+    "m is an integer at least 2",
+    "epsilon is in (0, 1/2] and 1/epsilon is a positive integer",
+    "utilities lie in {0, epsilon, ..., 1}",
+    "threshold lies in {epsilon, 2 epsilon, ..., 1}",
+    "acceptability uses the inclusive expected-utility inequality"
+  ],
+  "acceptance_criteria": [
+    "every agent in each declared complete finite domain is enumerated",
+    "learned and oracle halfspaces agree on every declared audit-grid cell",
+    "every query count respects the independently derived envelope",
+    "the symbolic normalization derivation covers the continuous simplex",
+    "the independent checker passes and two implementation mutations are detected"
+  ]
+}
