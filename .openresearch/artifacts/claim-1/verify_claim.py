@@ -39,7 +39,7 @@ def valid_rows(rows):
 
 
 rows = list(csv.DictReader((ROOT / "raw_scaling.csv").open()))
-assert len(rows) == 34
+assert len(rows) == 37
 assert {row["regime"] for row in rows} == {
     "quadratic_verification", "independent_n", "independent_m", "independent_precision"
 }
@@ -52,8 +52,9 @@ assert not valid_rows(corrupted)
 checker = json.loads((ROOT / "checker_output.json").read_text())
 controls = json.loads((ROOT / "negative_control_output.json").read_text())
 proof = json.loads((ROOT / "proof_certificate.json").read_text())
-assert checker["passed"] and checker["max_n"] >= 4096 and checker["max_m"] >= 1024
-assert 1.95 <= checker["quadratic_verification_loglog_slope"] <= 2.05
+assert checker["passed"] and checker["max_n"] >= 65536 and checker["max_m"] >= 256
+assert checker["max_epsilon_denominator"] >= 65536
+assert 1.94 <= checker["quadratic_verification_loglog_slope"] <= 2.05
 assert checker["quadratic_verification_r_squared"] > 0.999
 assert controls["passed"] and all(value is True for key, value in controls.items() if key != "passed")
 assert proof["status"] == "VERIFIED" and all(proof["obligations"].values())

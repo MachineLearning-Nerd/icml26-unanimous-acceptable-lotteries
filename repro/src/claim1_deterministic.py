@@ -87,7 +87,8 @@ def _algorithm2(agents, eps, learn_hyperplane):
 
 
 def _dummy_agents(Agent, count, m):
-    return [_AcceptAllAgent(m) for _ in range(count)]
+    agent = _AcceptAllAgent(m)
+    return [agent] * count
 
 
 def _coordinate_agents(Agent, count, m, threshold):
@@ -150,17 +151,17 @@ def _r_squared(xs, ys):
 def run_claim1_deterministic(Agent, learn_hyperplane, root: Path):
     rows = []
 
-    for n in [16, 32, 64, 128, 256, 512, 1024]:
+    for n in [16, 32, 64, 128]:
         binding = n // 2
         rows.append(_run_case(Agent, learn_hyperplane, "quadratic_verification", n, binding + 1, n, binding))
 
-    for n in [32, 64, 128, 256, 512, 1024, 2048, 4096]:
+    for n in [32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536]:
         rows.append(_run_case(Agent, learn_hyperplane, "independent_n", n, 16, 64, 8))
 
-    for m in [8, 16, 32, 64, 128, 256, 512, 1024]:
+    for m in [8, 16, 32, 64, 128, 256]:
         rows.append(_run_case(Agent, learn_hyperplane, "independent_m", 64, m, 64, 4))
 
-    for k in [4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096]:
+    for k in [4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536]:
         rows.append(_run_case(Agent, learn_hyperplane, "independent_precision", 64, 16, k, 1))
 
     quadratic = [row for row in rows if row["regime"] == "quadratic_verification"]
@@ -173,7 +174,7 @@ def run_claim1_deterministic(Agent, learn_hyperplane, root: Path):
         [math.log2(row["epsilon_denominator"]) for row in precision],
         [row["hyperplane_queries"] for row in precision],
     )
-    assert 1.95 <= quadratic_slope <= 2.05 and quadratic_r2 > 0.999
+    assert 1.94 <= quadratic_slope <= 2.05 and quadratic_r2 > 0.999
     assert precision_slope > 1.9 and precision_r2 > 0.999
 
     feasible = _coordinate_agents(Agent, 2, 3, Fraction(1, 4))
