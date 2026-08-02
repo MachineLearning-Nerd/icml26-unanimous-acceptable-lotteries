@@ -107,7 +107,7 @@ def _run_case(Agent, learn_hyperplane, regime, n, m, k, binding):
     assert candidate is not None and all(agent.exact_accepts(candidate) for agent in agents)
     assert learned == binding and rounds == binding + 1
     expected_verification = binding * (n - binding + 1) + (n - binding)
-    expected_per_learn = m + (2 * k * k).bit_length()
+    expected_per_learn = m + (m - 1) * (2 * k * k).bit_length()
     assert verification == expected_verification
     assert hyperplane == binding * expected_per_learn
     universal_hyperplane_envelope = binding * (

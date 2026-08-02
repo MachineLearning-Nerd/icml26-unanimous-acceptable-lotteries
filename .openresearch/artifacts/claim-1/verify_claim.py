@@ -19,7 +19,7 @@ def valid_rows(rows):
             k = int(row["epsilon_denominator"])
             binding = int(row["binding_agents"])
             verification = binding * (n - binding + 1) + (n - binding)
-            hyperplane = binding * (m + (2 * k * k).bit_length())
+            hyperplane = binding * (m + (m - 1) * (2 * k * k).bit_length())
             envelope = n * (n + 1) // 2 + binding * (
                 m + (m - 1) * (2 * math.ceil(math.log2(k)) + 2)
             )
