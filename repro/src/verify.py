@@ -15,8 +15,11 @@ import os
 import platform
 import random
 import subprocess
+import sys
 import time
 from pathlib import Path
+
+from claim3_scaling import run_claim3_scaling
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "outputs"
@@ -273,10 +276,21 @@ def main():
     claims = {"claim_1_halfspace": c1_learn_hyperplane(), "claim_2_deterministic": c2_deterministic_feasibility(),
               "claim_3_randomized": c3_randomized_reweighting(), "claim_4_lower_bound": c4_lower_bound_family(),
               "claim_5_prediction": c5_learning_augmented_order()}
+    claim3_upgrade = run_claim3_scaling(Agent, learn_hyperplane, satisfies, ROOT)
+    subprocess.run([sys.executable, str(ROOT / ".openresearch" / "artifacts" / "claim-3" / "verify_claim.py")],
+                   cwd=ROOT, check=True)
+    campaign_claims = {
+        "claim_1_deterministic": {"status": "BLOCKED", "reason": "full-scale contract not yet executed"},
+        "claim_2_randomized": {"status": "BLOCKED", "reason": "full-scale contract not yet executed"},
+        "claim_3_halfspace": claim3_upgrade,
+        "claim_4_lower_bounds": {"status": "BLOCKED", "reason": "minimax certificate not yet executed"},
+        "claim_5_prediction": {"status": "BLOCKED", "reason": "full-scale contract not yet executed"},
+    }
     cpu_affinity = len(os.sched_getaffinity(0)) if hasattr(os, "sched_getaffinity") else os.cpu_count()
     result = {"paper": "daiccpXZfU", "arxiv": "2604.17505", "all_claims_passed": all(v["passed"] for v in claims.values()),
               "claim_count": len(claims), "claims": claims,
-              "publication_eligible": len(claims) == 5,
+              "campaign_claims": campaign_claims,
+              "publication_eligible": all(v["status"] in {"VERIFIED", "FALSIFIED"} for v in campaign_claims.values()),
               "execution": {"git_sha": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
                             "python": platform.python_version(), "logical_cpus": os.cpu_count(),
                             "cpu_affinity": cpu_affinity, "runtime_seconds": round(time.perf_counter() - started, 6)},
