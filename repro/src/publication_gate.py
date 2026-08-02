@@ -140,6 +140,16 @@ def validate_report_and_notebook(release_root, opened):
         ET.fromstring(image.read_text())
         opened.add(image.relative_to(release_root).as_posix())
         assert image.read_bytes() == (ROOT / "reports" / "full-reproduction" / "images" / name).read_bytes()
+    release_report = release_root / "reports" / "full-reproduction" / "release_report.md"
+    release_text = release_report.read_text()
+    opened.add(release_report.relative_to(release_root).as_posix())
+    assert release_text.startswith("# Final release report\n\nPrevious live judged score: `5/10`")
+    assert "Conservative projected score range after the proposed change" in release_text
+    assert "Best-supported possible new score" in release_text and "forecast only" in release_text
+    assert "| Claim | Current points | Possible points | Confidence | Evidence status | Basis and remaining risk |" in release_text
+    assert release_text.count("| HIGH | VERIFIED |") == 5
+    assert "No claim is BLOCKED" in release_text
+    assert "DineshAI/daiccpXZfU" in release_text and "$0.0625" in release_text
     notebook = release_root / "notebooks" / "reproduction.py"
     opened.add(notebook.relative_to(release_root).as_posix())
     assert notebook.read_bytes() == (ROOT / "notebooks" / "reproduction.py").read_bytes()
@@ -217,7 +227,7 @@ def main():
         slugs = {}
         walk_logbook(logbook["root"], opened, slugs)
         assert all((release_root / path).is_file() for path in opened)
-        assert "current-report" in slugs and "historical-rejected-baseline" in slugs
+        assert "current-report" in slugs and "release-report" in slugs and "historical-rejected-baseline" in slugs
 
         current_index = release_root / slugs["current"]
         current_index_text = current_index.read_text()
@@ -246,6 +256,7 @@ def main():
         validate_evidence(release_root, repeat_opened)
         report = release_root / "reports" / "full-reproduction" / "report.md"
         repeat_opened.add(report.relative_to(release_root).as_posix())
+        repeat_opened.add("reports/full-reproduction/release_report.md")
         for name in re.findall(r"\]\(images/([^)]+\.svg)\)", report.read_text()):
             image = report.parent / "images" / name
             ET.fromstring(image.read_text())

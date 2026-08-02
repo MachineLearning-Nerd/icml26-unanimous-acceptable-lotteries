@@ -11,6 +11,7 @@ Strongest observed scales include `n=1,000,000`, `m=256`, `1/epsilon=65,536`, 40
 All research computation ran on Hugging Face `cpu-upgrade` with 64 allocated logical/affinity CPUs and no GPU. The environment is Python 3.12 under `uv`; every scientific node used the same fixed command and dependency-free base environment. A locked optional notebook extra is installed into the same `.venv` only after scientific verification for `marimo check`.
 
 - [Illustrated technical report](reports/full-reproduction/report.md)
+- [Final release report and score forecast](reports/full-reproduction/release_report.md)
 - [Self-contained marimo tutorial](notebooks/reproduction.py)
 - [Current evaluator-visible candidate](space_candidate/pages/current/index.md)
 
