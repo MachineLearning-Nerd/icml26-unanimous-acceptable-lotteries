@@ -22,7 +22,7 @@ Current total score: **5/10**. Conservative projected total: **5–10/10**. Best
 
 - Baseline branch and starting SHA: `main@15f5248dfce3fcb431e8b02ad9ffa266dc1a0357`.
 - Previous HF Head and Judge Head: `88488bc18db7974567008ee55dbea85871de82e4`.
-- Winning cumulative scientific revision: `orx/release-gate-and-blind-traversal@6e22b3b68ff9829c3cc3fa26f1593caeed36b4b9`.
+- Winning cumulative scientific revision: the historical release-gate candidate; its clean branch replacement is `release/release-gate-blind-traversal`.
 - Fixed command on every node: `uv sync --frozen && uv run --frozen python repro/src/verify.py && uv run --frozen python repro/src/publication_gate.py`.
 - Environment: Python 3.12, `uv`, one repository `.venv`, frozen `uv.lock`; optional `marimo==0.23.1` is installed into that same environment after the scientific verifier.
 - Compute contract: Hugging Face `cpu-upgrade`, officially 8 vCPU/32 GB, no GPU. The job process reported 64 logical CPUs and affinity 64; both figures are retained to distinguish provider flavor from container visibility.
@@ -55,6 +55,10 @@ Every listed run used the exact fixed command above on Hugging Face `cpu-upgrade
 | Release gate and blind traversal | done | 818 s |
 
 Total end-to-end duration is **7,090 s (1.969 h)**. Hugging Face documents `cpu-upgrade` at `$0.0005/min` (`$0.03/h`) with minute-based billing. Conservatively rounding every job upward gives **125 billable minutes and an estimated compute cost of $0.0625**; the Hugging Face billing page remains authoritative because `orx` duration can include non-billed lifecycle time. The final manifest-confirmation and post-publication audit jobs occur after this immutable report cut and are reported separately.
+
+### Post-freeze release validation
+
+The later release stages kept the same command and compute contract: a missing-UV image attempt exited before setup (16 s), manifest regeneration completed in 830 s, the committed-record gate completed in 862 s, and the exact published-revision audit completed in 789 s. Including those four jobs, the full campaign used **9,587 s (2.663 h)** end to end. Conservative per-job minute rounding gives **169 billable minutes and an estimated total cost of $0.0845**. The exact published Space revision is `b9ca864e0933fb79daa53802cc38bf971397eae8`; its 85 uploaded hashes, 20 protected historical paths, and two repeated canonical traversals passed on Hugging Face CPU. Its status is **AWAITING_LIVE_JUDGE**.
 
 ## Evidence and publication action
 
