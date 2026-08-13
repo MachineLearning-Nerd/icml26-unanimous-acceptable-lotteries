@@ -3,8 +3,9 @@
 Run the complete CPU verification with:
 
 ```bash
-python3 repro/src/verify.py
-python3 repro/src/publication_gate.py
+uv sync --frozen
+uv run --frozen python repro/src/verify.py
+uv run --frozen python repro/src/publication_gate.py
 ```
 
 All five anchored claims pass. Machine-readable evidence is in
@@ -23,3 +24,6 @@ All five anchored claims pass. Machine-readable evidence is in
 These are exact finite executions of the paper's membership-query algorithms
 and lower-bound construction. The public TeX proofs, rather than finite
 enumeration, establish the universal asymptotic query bounds.
+
+The previous live judged score is **5/10**. The candidate evidence is awaiting
+a fresh evaluator review; no score increase is claimed yet.

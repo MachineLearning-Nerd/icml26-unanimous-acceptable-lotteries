@@ -22,7 +22,7 @@ Current total score: **5/10**. Conservative projected total: **5–10/10**. Best
 
 - Baseline branch and starting SHA: `main@15f5248dfce3fcb431e8b02ad9ffa266dc1a0357`.
 - Previous HF Head and Judge Head: `88488bc18db7974567008ee55dbea85871de82e4`.
-- Winning cumulative scientific revision: `orx/release-gate-and-blind-traversal@6e22b3b68ff9829c3cc3fa26f1593caeed36b4b9`.
+- Winning cumulative scientific revision: the historical release-gate candidate; its clean branch replacement is `release/release-gate-blind-traversal`.
 - Fixed command on every node: `uv sync --frozen && uv run --frozen python repro/src/verify.py && uv run --frozen python repro/src/publication_gate.py`.
 - Environment: Python 3.12, `uv`, one repository `.venv`, frozen `uv.lock`; optional `marimo==0.23.1` is installed into that same environment after the scientific verifier.
 - Compute contract: Hugging Face `cpu-upgrade`, officially 8 vCPU/32 GB, no GPU. The job process reported 64 logical CPUs and affinity 64; both figures are retained to distinguish provider flavor from container visibility.
