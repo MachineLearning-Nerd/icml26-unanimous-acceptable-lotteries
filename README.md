@@ -4,10 +4,19 @@ Independent reproduction audit for [arXiv:2604.17505](https://arxiv.org/abs/2604
 “Learning Unanimously Acceptable Lotteries via Queries,” by Davin Choo, Paul
 W. Goldberg, and Nicholas Teh.
 
+## Audit record
+
+- Overall status: `ALL_FIVE_CLAIMS_VERIFIED_SCOPED_FINITE_AUDIT_HISTORICAL_SCORE_5_OF_10_NO_CURRENT_SCORE`
+- Repository: [MachineLearning-Nerd/icml26-unanimous-acceptable-lotteries](https://github.com/MachineLearning-Nerd/icml26-unanimous-acceptable-lotteries)
+- Scope: finite, source-faithful membership-query executions plus the public TeX proof anchors
+- Current score claim: none; the candidate is awaiting a fresh evaluator review
+- Publication gate: passed; author endorsement: not claimed
+- Standard audit surfaces: [CLAIM_EVIDENCE.md](CLAIM_EVIDENCE.md), [REPORT.md](REPORT.md), [STATUS.md](STATUS.md), [SOURCE_AUDIT.md](SOURCE_AUDIT.md), and [verify_final.py](verify_final.py)
+
 ## Result at a glance
 
-All five source-anchored claim contracts are **VERIFIED** with high scientific
-confidence in the cumulative campaign. The candidate is finite,
+All five source-anchored claim contracts are **VERIFIED (SCOPED)** with high
+scientific confidence in the cumulative campaign. The candidate is finite,
 source-faithful evidence—not a live-score claim: the previous live judged
 score is **5/10**, the published candidate is awaiting a fresh evaluator
 review, and no score increase is claimed.
@@ -22,7 +31,9 @@ theorem-calibration families rather than natural preference data.
 Read the [illustrated report](reports/full-reproduction/report.md), the
 [release report](reports/full-reproduction/release_report.md), the
 [source audit](docs/SOURCE_AUDIT.md), and the
-[machine-readable verdict](outputs/verdict.json).
+[machine-readable verdict](outputs/verdict.json). The normalized summary is in
+[reproduction_verdicts.json](reproduction_verdicts.json), and the required
+files and controls are listed in [EVIDENCE_MANIFEST.json](EVIDENCE_MANIFEST.json).
 
 ## Problem and paper scope
 
@@ -77,9 +88,10 @@ uv run --frozen --extra notebook marimo edit notebooks/reproduction.py
 
 `main` is the canonical reader-facing publication surface. The 16 historical
 `orx/*` branches are preserved as descriptive `audit/*`, `experiment/*`,
-`integration/*`, and `release/*` names. The complete old-to-new mapping and
-the purpose of every branch are in [`branch-audit.md`](branch-audit.md). No
-branch beginning with `orx/` remains after cleanup.
+`integration/*`, and `release/*` names, giving 17 branches including `main`.
+The complete old-to-new mapping and the purpose of every branch are in
+[`branch-audit.md`](branch-audit.md). No branch beginning with `orx/` remains
+after cleanup. All reachable commits are attributed to `MachineLearning-Nerd`.
 
 ## Citation
 

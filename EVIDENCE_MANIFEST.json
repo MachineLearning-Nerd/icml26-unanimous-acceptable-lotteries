@@ -1,0 +1,57 @@
+{
+  "schema_version": "1",
+  "paper_source": "arXiv:2604.17505",
+  "openreview_id": "daiccpXZfU",
+  "overall_status": "ALL_FIVE_CLAIMS_VERIFIED_SCOPED_FINITE_AUDIT_HISTORICAL_SCORE_5_OF_10_NO_CURRENT_SCORE",
+  "required_evidence": [
+    "README.md",
+    "STATUS.md",
+    "CLAIM_EVIDENCE.md",
+    "SOURCE_AUDIT.md",
+    "docs/SOURCE_AUDIT.md",
+    "ENVIRONMENT.md",
+    "REPORT.md",
+    "branch-audit.md",
+    "repro/src/verify.py",
+    "repro/src/publication_gate.py",
+    "outputs/verdict.json",
+    "outputs/publication_gate.json",
+    ".openresearch/artifacts/claim-1/",
+    ".openresearch/artifacts/claim-2/",
+    ".openresearch/artifacts/claim-3/",
+    ".openresearch/artifacts/claim-4/",
+    ".openresearch/artifacts/claim-5/",
+    ".openresearch/release/blind_review.json",
+    ".openresearch/provenance/live_verdict_2026-08-02.json",
+    "space_candidate/README.md",
+    "space_candidate/logbook.json",
+    "reports/full-reproduction/report.md",
+    "reports/full-reproduction/release_report.md",
+    "claims.json",
+    "reproduction_verdicts.json",
+    "AUTONOMOUS_STATE.json",
+    "CITATION.cff",
+    "AUTHOR_THANK_YOU.md",
+    "verify_final.py"
+  ],
+  "controls": {
+    "independent_checkers": true,
+    "negative_controls": true,
+    "proof_certificates": true,
+    "source_version_pinned": true,
+    "publication_gate_passed": true,
+    "gpu_used": false,
+    "natural_preference_data_used": false
+  },
+  "source_hashes": {
+    "pinned_tex_archive": "73dd9aa76258e676da3cdec4454a84e5dc576b680424e1366a4fff719ed6b3ab",
+    "historical_live_snapshot": "88488bc18db7974567008ee55dbea85871de82e4",
+    "candidate_revision": "b9ca864e0933fb79daa53802cc38bf971397eae8"
+  },
+  "publication": {
+    "current_score_claim": false,
+    "publication_allowed": false,
+    "official_author_endorsement": false,
+    "historical_score": "5/10"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1",
+  "paper": "Learning Unanimously Acceptable Lotteries via Queries",
+  "paper_source": "arXiv:2604.17505",
+  "openreview_id": "daiccpXZfU",
+  "overall_status": "ALL_FIVE_CLAIMS_VERIFIED_SCOPED_FINITE_AUDIT_HISTORICAL_SCORE_5_OF_10_NO_CURRENT_SCORE",
+  "claims": [
+    {
+      "id": "C1",
+      "status": "VERIFIED_SCOPED_HIGH_CONFIDENCE",
+      "paper_anchor": "Algorithm 1; Lemmas 3.1-3.2",
+      "production_path": "repro/src/claim3_scaling.py; repro/src/claim3_exhaustive.py; .openresearch/artifacts/claim-3/",
+      "negative_control": "unquantized threshold breaks the bounded-denominator premise",
+      "scope": "finite epsilon-quantized halfspace recovery, scaling, and exhaustive simplex-cell checks"
+    },
+    {
+      "id": "C2",
+      "status": "VERIFIED_SCOPED_HIGH_CONFIDENCE",
+      "paper_anchor": "Algorithm 2; Theorem 3.3",
+      "production_path": "repro/src/claim1_deterministic.py; repro/src/verify.py; .openresearch/artifacts/claim-1/",
+      "negative_control": "ignoring a rejecting agent creates a false positive",
+      "scope": "finite source-faithful deterministic feasibility transcripts and exact query certificates"
+    },
+    {
+      "id": "C3",
+      "status": "VERIFIED_SCOPED_HIGH_CONFIDENCE",
+      "paper_anchor": "Algorithm 3; Theorem 3.4",
+      "production_path": "repro/src/claim2_randomized.py; .openresearch/artifacts/claim-2/",
+      "negative_control": "disabling weight updates leaves first-round violators unresolved",
+      "scope": "finite weighted-sampling executions, seeded runs, and expectation certificate"
+    },
+    {
+      "id": "C4",
+      "status": "VERIFIED_SCOPED_HIGH_CONFIDENCE",
+      "paper_anchor": "Theorems 4.1-4.2 and proof appendices",
+      "production_path": "repro/src/claim4_lower_bound.py; .openresearch/artifacts/claim-4/",
+      "negative_control": "a non-singleton hard family invalidates the leaf-count argument",
+      "scope": "finite positive epsilon-grid singleton family and decision-tree/minimax/Kraft/Yao checks"
+    },
+    {
+      "id": "C5",
+      "status": "VERIFIED_SCOPED_HIGH_CONFIDENCE",
+      "paper_anchor": "Theorems 5.1-5.2",
+      "production_path": "repro/src/claim5_prediction.py; .openresearch/artifacts/claim-5/",
+      "negative_control": "reversed advice changes the record-agent and query trace",
+      "scope": "finite predicted-order instances with record-agent and verification-query accounting"
+    }
+  ]
+}

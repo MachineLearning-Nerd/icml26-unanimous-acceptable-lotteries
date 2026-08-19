@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this reproduction or audit, please cite this repository and the original paper."
+type: software
+title: "Independent audit of Learning Unanimously Acceptable Lotteries via Queries"
+version: "1.0.0"
+date-released: 2026-08-19
+authors:
+  - name: MachineLearning-Nerd
+repository-code: "https://github.com/MachineLearning-Nerd/icml26-unanimous-acceptable-lotteries"
+url: "https://github.com/MachineLearning-Nerd/icml26-unanimous-acceptable-lotteries"
+abstract: "Claim-by-claim CPU reproduction audit of Learning Unanimously Acceptable Lotteries via Queries."
+keywords:
+  - social choice
+  - membership queries
+  - learning-augmented algorithms
+  - query complexity
+  - reproduction
+preferred-citation:
+  type: article
+  title: "Learning Unanimously Acceptable Lotteries via Queries"
+  authors:
+    - family-names: Choo
+      given-names: Davin
+    - family-names: Goldberg
+      given-names: Paul W.
+    - family-names: Teh
+      given-names: Nicholas
+  year: 2026
+  url: "https://arxiv.org/abs/2604.17505"

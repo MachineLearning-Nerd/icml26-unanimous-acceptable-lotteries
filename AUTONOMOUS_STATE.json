@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "paper_source": "arXiv:2604.17505",
+  "openreview_id": "daiccpXZfU",
+  "phase": "scoped_finite_audit_complete_waiting_for_live_evaluator",
+  "overall_status": "ALL_FIVE_CLAIMS_VERIFIED_SCOPED_FINITE_AUDIT_HISTORICAL_SCORE_5_OF_10_NO_CURRENT_SCORE",
+  "next_action": "retain the source-anchored evidence and wait for a fresh evaluator result; do not claim a score increase",
+  "current_score_claim": false,
+  "publication_allowed": false,
+  "official_author_endorsement": false,
+  "candidate": {
+    "space_id": "DineshAI/daiccpXZfU",
+    "revision": "b9ca864e0933fb79daa53802cc38bf971397eae8",
+    "publication_gate_passed": true
+  },
+  "historical_live_judge": {
+    "points": 5,
+    "total": 10,
+    "quality": "medium",
+    "judged_at": "2026-07-30T14:54:40+00:00",
+    "snapshot_sha": "88488bc18db7974567008ee55dbea85871de82e4"
+  },
+  "source": {
+    "pinned_tex_archive_sha256": "73dd9aa76258e676da3cdec4454a84e5dc576b680424e1366a4fff719ed6b3ab"
+  },
+  "repository_identity": {
+    "owner": "MachineLearning-Nerd",
+    "canonical_email": "MachineLearning-Nerd@users.noreply.github.com",
+    "recovery_bundle_sha256": "0aa44f1e32cc1aacd139f346ebbf4e152cd5b029f1c4cefe9dd209913cb67929"
+  },
+  "github_repository": "https://github.com/MachineLearning-Nerd/icml26-unanimous-acceptable-lotteries"
+}

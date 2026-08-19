@@ -1,0 +1,30 @@
+{
+  "schema_version": "1",
+  "overall_status": "ALL_FIVE_CLAIMS_VERIFIED_SCOPED_FINITE_AUDIT_HISTORICAL_SCORE_5_OF_10_NO_CURRENT_SCORE",
+  "source_scope": "arXiv:2604.17505 / OpenReview daiccpXZfU",
+  "cumulative_evidence": "PASS_SCOPED_FINITE_RELEASE_GATE",
+  "claims": {
+    "C1": "VERIFIED_SCOPED_HIGH_CONFIDENCE",
+    "C2": "VERIFIED_SCOPED_HIGH_CONFIDENCE",
+    "C3": "VERIFIED_SCOPED_HIGH_CONFIDENCE",
+    "C4": "VERIFIED_SCOPED_HIGH_CONFIDENCE",
+    "C5": "VERIFIED_SCOPED_HIGH_CONFIDENCE"
+  },
+  "historical_live_score": {
+    "points": 5,
+    "total": 10,
+    "quality": "medium",
+    "judged_at": "2026-07-30T14:54:40+00:00",
+    "snapshot_sha": "88488bc18db7974567008ee55dbea85871de82e4",
+    "current_score_claim": false
+  },
+  "candidate": {
+    "space_id": "DineshAI/daiccpXZfU",
+    "revision": "b9ca864e0933fb79daa53802cc38bf971397eae8",
+    "publication_gate_passed": true,
+    "awaiting_fresh_evaluator": true
+  },
+  "publication_allowed": false,
+  "official_author_endorsement": false,
+  "boundary": "Finite executions validate mechanisms and certificates; the public TeX proofs supply universal asymptotic quantifiers. The constructed families are not natural preference data."
+}
